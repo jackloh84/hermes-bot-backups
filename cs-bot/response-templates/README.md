@@ -1,0 +1,1 @@
+# CS Bot - Response Templates
