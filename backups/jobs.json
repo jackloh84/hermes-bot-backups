@@ -1,0 +1,476 @@
+{
+  "jobs": [
+    {
+      "id": "4e9340227c13",
+      "name": "Weekly Earnings Check-In",
+      "prompt": "Weekly earnings and progress report for Jack Loh.\n\nINSTRUCTIONS:\n1. Check Gumroad sales: GUMROAD_ACCESS_TOKEN=rbv34dFT7tychocAS5kKiqyvTjpRkwgFhaNr81nVnPY gumroad sales summary --json\n2. Check Daily Earning Mission Runner results from the week\n3. Check Gumroad Product Marketer results from the week\n4. Produce a weekly earnings dashboard with:\n   - Total revenue this week vs last week\n   - Which products sold (if any)\n   - What promotional actions were taken\n   - Recommendations for next week\n5. Be honest and direct. If $0, say \"FAIL\" and give 3 concrete reasons why + 3 specific fixes.\n\nEnd with: WEEK GRADE: [A/B/C/D/F]",
+      "skills": [],
+      "skill": null,
+      "model": "MiniMax-M3",
+      "provider": "minimax-cn",
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 1",
+        "display": "0 10 * * 1"
+      },
+      "schedule_display": "0 10 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 2
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-05T17:25:39.136306+08:00",
+      "next_run_at": "2026-07-20T10:00:00+08:00",
+      "last_run_at": "2026-07-13T10:18:53.131991+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "7ac195026fe2",
+      "name": "Gumroad Product Marketer",
+      "prompt": "You are Jack Loh's autonomous earning agent. Your ONLY job is to generate sales for his Gumroad store at https://jackalope86.gumroad.com.\n\nPRODUCTS TO PROMOTE:\n1. \"50 Viral TikTok Hooks + AI Prompts\" \u2014 $3 USD \u2014 https://jackalope86.gumroad.com/l/diywdak (ENTRY LEVEL - push this hardest)\n2. \"AI for Content Creators Prompt Pack Vol 2\" \u2014 SGD$19 \u2014 https://jackalope86.gumroad.com/l/xcjutg\n3. \"AI Business Automation Prompt Pack\" \u2014 SGD$19 \u2014 https://jackalope86.gumroad.com/l/byrjla\n4. \"The AI Solopreneur Launchpad\" \u2014 $5 USD \u2014 https://jackalope86.gumroad.com/l/dgdtjf\n\nINSTRUCTIONS:\n1. Check today's Gumroad sales using: GUMROAD_ACCESS_TOKEN=rbv34dFT7tychocAS5kKiqyvTjpRkwgFhaNr81nVnPY gumroad sales list --after $(date +%Y-%m-%d) --json\n2. Summarize today's results. If there are sales, CELEBRATE and say exactly what sold.\n3. If ZERO sales (most likely), do NOT just report $0. Instead:\n   a. Brainstorm 3 specific marketing actions you could take RIGHT NOW to drive a sale\n   b. Pick the best one and execute it (e.g., craft a promotional post, suggest a price change, identify an audience to target)\n   c. Report what you did and what you expect the result to be\n4. END with a clear verdict: \"Today's mission: [PASS/FAIL] \u2014 [one sentence why]\"\n\n\ud83d\udeab IMPORTANT: Do NOT post to Bluesky. Bluesky has its own dedicated random-day poster that runs separately. Only post to Telegram channel @jacklohai if you decide to promote.\n\nRemember: Jack pays you $0 if you just report nothing. You only earn when you DRIVE RESULTS. Be creative, be aggressive, be useful.",
+      "skills": [],
+      "skill": null,
+      "model": "MiniMax-M3",
+      "provider": "minimax-cn",
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8,15 * * *",
+        "display": "0 8,15 * * *"
+      },
+      "schedule_display": "0 8,15 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 24
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-07T23:29:02.885210+08:00",
+      "next_run_at": "2026-07-20T08:00:00+08:00",
+      "last_run_at": "2026-07-19T15:02:38.033555+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "d5fe0d34ed7e",
+      "name": "Daily Earning Mission Runner",
+      "prompt": "You are Jack Loh's autonomous earning agent in Singapore. Your mission is to FIND and EXECUTE at least one concrete earning opportunity.\n\nJACK'S ASSETS:\n- Gumroad store: jackalope86.gumroad.com (4 products, $3-$19)\n- Hive account: jakcloh84 (auto-poster running hourly)\n- AI tools: DeepSeek ($115 bal), Gemini (free), MiniMax M3, Kimi\n- TikTok affiliate content (using MiniMax I2V + MuAPI)\n- X/Twitter handle: @JackLoh84\n\nYOUR MISSION:\n1. Search the web for trending earning opportunities suitable for someone in Singapore with AI content creation skills\n2. Research ONE specific, actionable opportunity (not generic advice)\n3. Produce a concrete next step Jack can take RIGHT NOW to earn money\n4. If possible, actually EXECUTE the step yourself (draft a post, create content, set up something)\n\nWrite your response as a MISSION BRIEF:\n- Opportunity found: [name]\n- How it works: [1-2 sentences]\n- First action taken: [what you did]\n- Expected outcome: [what should happen]\n- Estimated earning potential: [$]\n\nMake every run count. Jack is tracking results.",
+      "skills": [
+        "web-research"
+      ],
+      "skill": "web-research",
+      "model": "MiniMax-M3",
+      "provider": "minimax-cn",
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9,18 * * *",
+        "display": "0 9,18 * * *"
+      },
+      "schedule_display": "0 9,18 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 24
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-07T23:29:11.034517+08:00",
+      "next_run_at": "2026-07-20T09:00:00+08:00",
+      "last_run_at": "2026-07-19T18:00:11.620466+08:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: HTTP 429: \u5df2\u8fbe\u5230 Token Plan \u7528\u91cf\u4e0a\u9650\uff1a\u8bf7\u5347\u7ea7 Token Plan \u5957\u9910\u6216\u8d2d\u4e70\u79ef\u5206\u8865\u5145\u7528\u91cf\u3002 (2056)",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "6c6888334ca0",
+      "name": "Telegram Gumroad Daily Promoter",
+      "prompt": "You are running on Telegram channel @jacklohai.\n\n\u26a0\ufe0f FIRST: Load platform-policy-enforcer skill\n\u26a0\ufe0f SECOND: Load humanizer skill\n\nHUMAN RULE #1: 90% of humans are lurkers. They don't post daily. Neither should you.\nHUMAN RULE #2: Humans are lazy. Sometimes they can't be bothered. Skip 50% of the time.\n\nROLL A DICE (1-6):\n- 1-3: SKIP. Say nothing. Today you're lazy.\n- 4-6: Post ONE short thought. 1-3 sentences max.\n\nHUMAN POST tells (FIX THESE):\n\u274c \"Struggling with X?\" \u2014 Humans don't start conversations with fake rhetorical questions\n\u274c \"Here's what you need to know\" \u2014 Humans don't announce what they're about to say\n\u274c Perfect marketing copy \u2014 Reads like an ad, not a person\n\u274c Hashtags \u2014 0-1 max. Real people don't use 5 hashtags\n\u274c Emojis \u2014 0-1 max. Only if natural.\n\n\u2705 HOW HUMANS POST:\n- \"Been using this template for my TikToks. Works pretty well. [link]\"\n- \"Just dropped an updated version of my prompt pack. Fixed the formatting issues people mentioned.\"\n- Sometimes just: \"This. [link]\" \u2014 humans are THAT lazy\n- No call to action. No \"what do you think?\" No \"let me know.\"\n- Just say what you want to say and stop.\n\nCRITICAL: Read your post aloud. If it sounds like a marketing brochure, DELETE IT. If it sounds like a friend texting, SEND IT.\n\nContent: Pick one product from rotation if inspired. If nothing feels natural to say, SKIP (dice rule handles this).",
+      "skills": [
+        "humanizer",
+        "platform-policy-enforcer"
+      ],
+      "skill": "humanizer",
+      "model": "MiniMax-M3",
+      "provider": "minimax-cn",
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 1,3,5",
+        "display": "0 10 * * 1,3,5"
+      },
+      "schedule_display": "0 10 * * 1,3,5",
+      "repeat": {
+        "times": null,
+        "completed": 9
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-08T20:28:58.976796+08:00",
+      "next_run_at": "2026-07-20T10:00:00+08:00",
+      "last_run_at": "2026-07-17T10:00:21.533812+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "271419360907",
+      "name": "DEV.to Article Publisher",
+      "prompt": "Write and publish a short article to DEV.to.\n\n\u26a0\ufe0f FIRST: Load platform-policy-enforcer skill\n\u26a0\ufe0f SECOND: Load humanizer skill\n\nHUMAN RULE #1: Most devs blog once a month or less. You don't need to be prolific.\nHUMAN RULE #2: If you don't have something real to say, SKIP. Silence is human.\n\nROLL A DICE (1-6):\n- 1-2: SKIP entirely. Writer's block is real.\n- 3-6: Write ONE real thought. 200-400 words.\n\nHUMAN POSTING RULES:\n- REAL devs write short. One idea per post. No fluff.\n- REAL devs have opinions. Say what sucked. Say what surprised you.\n- REAL devs don't write \"In this comprehensive guide, we'll explore...\"\n- REAL devs write: \"I tried X so you don't have to. Here's what happened.\"\n\nTONE: Like a conversation at a meetup, not a blog post. Be opinionated. Be casual. Be honest.\n\nTITLE EXAMPLES:\n\u2705 \"I automated my content queue and regretted it\"\n\u2705 \"Three months with AI coding tools \u2014 what actually works\"\n\u2705 \"The simplest thing that doubled my Gumroad sales\"\n\u274c \"The Ultimate Guide to Content Automation in 2026\"\n\nCONTENT:\n- One real experience or opinion\n- 200-400 words\n- Mention product at the end only if it's genuinely relevant\n- No \"In conclusion\" paragraphs. Just stop talking when you're done.\n\nFINAL CHECK: Read aloud. Does it sound like a real dev? If it sounds like an AI article, DELETE AND REWRITE.",
+      "skills": [
+        "humanizer",
+        "platform-policy-enforcer"
+      ],
+      "skill": "humanizer",
+      "model": "MiniMax-M3",
+      "provider": "minimax-cn",
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 11 * * 2",
+        "display": "0 11 * * 2"
+      },
+      "schedule_display": "0 11 * * 2",
+      "repeat": {
+        "times": null,
+        "completed": 3
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-08T20:36:58.094617+08:00",
+      "next_run_at": "2026-07-21T11:00:00+08:00",
+      "last_run_at": "2026-07-14T11:01:30.548563+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "cdead07f3cec",
+      "name": "Weekly Competitor Market Scan",
+      "prompt": "You are Biz Bot \u2014 Jack Loh's autonomous monetization research agent.\n\nYOUR TASK: Run the weekly competitive market intelligence scan and deliver a concise briefing.\n\nINSTRUCTIONS:\n1. Load the biz-research-autonomous skill for full research tools\n2. Run the market research script: `cd /home/ubuntu/.hermes/profiles/bot4/skills/business/biz-research-autonomous/scripts && python3 market-research.py --weekly`\n3. Analyze the output \u2014 extract key signals, not noise\n4. Check if ANY competitors have shifted pricing, launched new products, or entered new niches\n5. Cross-reference against Jack's current 2 Gumroad products ($19 SGD each):\n   - AI Business Automation Prompt Pack: https://jackalope86.gumroad.com/l/byrjla\n   - AI for Content Creators Prompt Pack Vol 2: https://jackalope86.gumroad.com/l/xcjutg\n6. Produce a ONE-PAGE briefing with:\n   - KEY SIGNAL: the single most important finding\n   - COMPETITOR MOVES: any pricing changes, new products, or notable shifts\n   - JACK'S OPPORTUNITY: 1 concrete action Jack should take this week\n   - VERDICT: Market direction + recommended pricing/positioning change (if any)\n\nFORMAT: Short, punchy, action-oriented. Jack needs bullets, not essays. Start with the KEY SIGNAL.\n\nCRITICAL: Do NOT just present raw data. You are an analyst \u2014 extract signal, make recommendations, anticipate what Jack needs to know.",
+      "skills": [
+        "biz-research-autonomous",
+        "web-research"
+      ],
+      "skill": "biz-research-autonomous",
+      "model": "MiniMax-M3",
+      "provider": "minimax-cn",
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * 1",
+        "display": "0 7 * * 1"
+      },
+      "schedule_display": "0 7 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-09T11:34:24.889780+08:00",
+      "next_run_at": "2026-07-20T07:00:00+08:00",
+      "last_run_at": "2026-07-13T07:12:52.616826+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "2ce77a098b53",
+      "name": "Bluesky Random Poster",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "bluesky-poster.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "display": "0 10 * * *"
+      },
+      "schedule_display": "0 10 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 8
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-11T19:32:41.604938+08:00",
+      "next_run_at": "2026-07-20T10:00:00+08:00",
+      "last_run_at": "2026-07-19T10:00:59.038345+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "e22c2cb4ebb9",
+      "name": "Run GitHub backup then check repo stats.\n\nStep 1 \u2014",
+      "prompt": "Run GitHub backup then check repo stats.\n\nStep 1 \u2014 Backup:\n```bash\nexport GITHUB_TOKEN=$(grep GITHUB_TOKEN /home/ubuntu/.hermes/profiles/bot4/.env | cut -d= -f2)\ncd /home/ubuntu/.hermes/profiles/bot4/scripts\npython3 github-backup.py\n```\n\nStep 2 \u2014 Check repo stars/forks:\n```bash\nexport GITHUB_TOKEN=$(grep GITHUB_TOKEN /home/ubuntu/.hermes/profiles/bot4/.env | cut -d= -f2)\nfor repo in hermes-bot-backups tiktok-viral-hooks content-creator-prompts solopreneur-ai-toolkit youtube-shorts-generator; do\n  echo \"=== $repo ===\"\n  curl -s -H \"Authorization: token $GITHUB_TOKEN\" https://api.github.com/repos/jackloh84/$repo\n  echo \"\"\ndone\n```\n\nReport: backup result + total stars across all repos. Keep short.",
+      "skills": [],
+      "skill": null,
+      "model": "MiniMax-M3",
+      "provider": "minimax-cn",
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 20 * * 0",
+        "display": "0 20 * * 0"
+      },
+      "schedule_display": "0 20 * * 0",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-13T23:02:07.238441+08:00",
+      "next_run_at": "2026-07-26T20:00:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null
+    },
+    {
+      "id": "d7e46b609046",
+      "name": "Daily SEO Health Monitor",
+      "prompt": "You are Biz Bot (@bot4) running the daily SEO health monitor.\n\nYour job: run the health check script, identify any FAILs, and report.\n\n\u26a0\ufe0f FIRST: Load the `seo-mastery` skill (business category) \u2014 it's Biz Bot's master SEO skill with all the context, tools, and pitfalls.\n\nThen run:\n```bash\ncd /home/ubuntu/.hermes/profiles/bot4/scripts\npython3 seo-health-monitor.py --all --save\n```\n\nThis produces:\n- A health report (overall score 0-100, per-section pass/fail)\n- A markdown report saved to ~/seo-output/health-{date}.md\n\nInspect any FAILs and report ONLY if action is needed. Specifically check:\n1. Any Gumroad product returning non-200 (would mean a product page is down)\n2. Any DEV.to article with 0 reactions after 7+ days (worth a republish/refresh)\n3. Any AI-citation artifact missing (llms.txt, robots.txt on the external site Jack controls)\n4. Overall score dropped below 60 (means multiple things broke)\n\nIf everything passes, send a single brief line: \"\u2705 SEO health OK \u2014 {score}/100. {passed}/{total} checks passed.\" Do NOT spam with the full report when healthy.\n\nIf there are FAILs, give Jack a concise 3-5 line summary with the specific failing checks and a one-line action suggestion per FAIL.\n\nUse model: minimax-cn MiniMax-M3 (per Jack's directive \u2014 same as Biz Bot default). Skills: seo-mastery. Toolsets: terminal, file.",
+      "skills": [
+        "seo-mastery",
+        "platform-policy-enforcer"
+      ],
+      "skill": "seo-mastery",
+      "model": "MiniMax-M3",
+      "provider": "minimax-cn",
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 7 * * *",
+        "display": "0 7 * * *"
+      },
+      "schedule_display": "0 7 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 6
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-14T00:15:23.878183+08:00",
+      "next_run_at": "2026-07-20T07:00:00+08:00",
+      "last_run_at": "2026-07-19T07:01:11.022325+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "c762c2f553bd",
+      "name": "Kachang Sia Domain Renewal Reminder",
+      "prompt": "REMINDER for Jack Loh: The kachangsia.com domain (registered 2026-07-17 via Cloudflare Registrar, US$10.50/yr) is due to renew in ~2 weeks on 2027-07-17.\n\nACTIONS REQUIRED:\n1. Log into Cloudflare Registrar (Jack's personal card on file)\n2. Confirm kachangsia.com is set to auto-renew OR manually renew\n3. Verify billing details still valid\n4. If you want to switch to a different registrar or multi-year plan, this is the window\n5. After renewal, ADD THIS EXPENSE to /home/ubuntu/projects/kachang-sia/finance/ledger.csv as a new row (do not modify the 2026-07-17 entry)\n6. Update the pre-incorporation-expenses.md file under /home/ubuntu/projects/kachang-sia/finance/\n\nOriginal entry: 2026-07-17 | Cloudflare Registrar | kachangsia.com | US$10.50 | Marketing/Brand asset | Kachang Sia | Pay: Jack's Cloudflare card | Renewal: 2027-07-17\n\nThis reminder is one-shot. After it fires, schedule the next one for 2028-07-03 (~2 weeks before 2028-07-17).",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "minimax-cn",
+      "model_snapshot": "MiniMax-M3",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 3 7 *",
+        "display": "0 9 3 7 *"
+      },
+      "schedule_display": "0 9 3 7 *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-17T23:14:13.228619+08:00",
+      "next_run_at": "2027-07-03T09:00:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram:366983738",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null
+    }
+  ],
+  "updated_at": "2026-07-19T20:00:01.560902+08:00"
+}
