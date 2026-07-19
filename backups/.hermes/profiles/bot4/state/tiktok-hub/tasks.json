@@ -1,0 +1,23 @@
+[
+  {
+    "id": "TASK-20260712-140157",
+    "created_by": "Biz Bot (@her_a04_bot)",
+    "assigned_to": "CC Bot (@her_a03_bot)",
+    "product": "Anker Soundcore 2 Bluetooth Speaker",
+    "product_key": "anker-soundcore-2",
+    "price": "$31.99 SGD",
+    "commission": "5-15%",
+    "key_features": [
+      "IPX7 Waterproof",
+      "24H Battery",
+      "12W BassUp",
+      "Bluetooth 5.0"
+    ],
+    "format_preference": "waterproof-test",
+    "status": "ready",
+    "created_at": "2026-07-12T14:01:57.480186",
+    "brief_file": null,
+    "completed_at": null,
+    "notes": "Best selling point is waterproof test. Micro USB is the main con."
+  }
+]
