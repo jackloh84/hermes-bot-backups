@@ -1,0 +1,25 @@
+2026-07-19 10:30 SGT
+Mission: minia2a stack restore + service re-registration
+
+Issue: Previous 4-service registration from Jul 17 used a cloudflared quick-tunnel URL that has since expired.
+The 3 "Jack Wallet Tools" listings in marketplace all point to the dead trycloudflare URL (HTTP 000).
+No new traffic was reaching Jack's services despite registration.
+
+Fix 1: Restarted uvicorn (port 8088) + cloudflared quick-tunnel.
+New tunnel URL: https://tech-boss-ada-usd.trycloudflare.com
+Endpoint verified: HTTP 200 in 57ms, minia2a probe returns correct echo.
+
+Fix 2: Re-registered 4 services with focused, searchable names against the new tunnel:
+  - Base Token Security Scanner (id: f52af41e-50facb9accb5)
+  - Polymarket Odds Live (id: f52af41e-749022737c50)
+  - On-Chain Wallet Profile (id: f52af41e-05dcd9bb3db1)
+  - Base USDC Swap Quote (id: f52af41e-d435c9b273dc)
+All return ok:true from /api/register. Total Jack Loh services now visible: 5.
+
+Fix 3: Created /home/ubuntu/.hermes/profiles/bot4/scripts/agent-service-keepalive.sh
+Cron: every 5 min, pgrep + curl health check, auto-restart stack if down, update .stack-health.json.
+Old "Jack Wallet Tools" duplicates are harmless (still listed but all point to dead URL - zero impact).
+
+Status: Stack healthy, 5 services live, 0 calls/trials.
+Expected: First trial hits within 24-72h as minia2a discovery reindexes. First paid call: 5-14 days.
+Next run: Check .stack-health.json + .earnings-state.json for any traffic movement.
