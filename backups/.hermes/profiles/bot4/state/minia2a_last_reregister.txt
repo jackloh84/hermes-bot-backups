@@ -1,0 +1,1 @@
+2026-07-20 — re-registered 7 services to LIVE tunnel. Names narrowed to match leaderboard trends (Polymarket Odds Live, Web Scraper x402, Base Token Security Scanner, On-Chain Wallet Profile, Base USDC Swap Quote, Multi-Chain Gas Price, Token Holder Lookup). All return ok=true from POST /api/register.
