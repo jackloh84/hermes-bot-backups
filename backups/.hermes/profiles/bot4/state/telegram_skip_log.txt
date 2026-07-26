@@ -1,1 +1,1 @@
-2026-07-17 | SENT product 1 (VIRALFIRST) msg_id=18
+2026-07-24 | SKIP Telegram @jacklohai: last broadcast 2026-07-23 08:01 UTC (msg_id 26, ~31h ago) — UNDER 48h CAP per skill rule. Used DEV.to (id 4221112) + HTML landing + Jack DM instead.
