@@ -22,15 +22,15 @@
       "schedule_display": "0 10 * * 1",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 3
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-05T17:25:39.136306+08:00",
-      "next_run_at": "2026-07-20T10:00:00+08:00",
-      "last_run_at": "2026-07-13T10:18:53.131991+08:00",
+      "next_run_at": "2026-07-27T10:00:00+08:00",
+      "last_run_at": "2026-07-20T10:05:48.899131+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -68,15 +68,15 @@
       "schedule_display": "0 8,15 * * *",
       "repeat": {
         "times": null,
-        "completed": 24
+        "completed": 38
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-07T23:29:02.885210+08:00",
-      "next_run_at": "2026-07-20T08:00:00+08:00",
-      "last_run_at": "2026-07-19T15:02:38.033555+08:00",
+      "next_run_at": "2026-07-27T08:00:00+08:00",
+      "last_run_at": "2026-07-26T15:01:20.332226+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -116,17 +116,17 @@
       "schedule_display": "0 9,18 * * *",
       "repeat": {
         "times": null,
-        "completed": 24
+        "completed": 38
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-07T23:29:11.034517+08:00",
-      "next_run_at": "2026-07-20T09:00:00+08:00",
-      "last_run_at": "2026-07-19T18:00:11.620466+08:00",
-      "last_status": "error",
-      "last_error": "RuntimeError: HTTP 429: \u5df2\u8fbe\u5230 Token Plan \u7528\u91cf\u4e0a\u9650\uff1a\u8bf7\u5347\u7ea7 Token Plan \u5957\u9910\u6216\u8d2d\u4e70\u79ef\u5206\u8865\u5145\u7528\u91cf\u3002 (2056)",
+      "next_run_at": "2026-07-27T09:00:00+08:00",
+      "last_run_at": "2026-07-26T18:02:27.333343+08:00",
+      "last_status": "ok",
+      "last_error": null,
       "last_delivery_error": null,
       "deliver": "origin",
       "origin": {
@@ -165,15 +165,15 @@
       "schedule_display": "0 10 * * 1,3,5",
       "repeat": {
         "times": null,
-        "completed": 9
+        "completed": 12
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-08T20:28:58.976796+08:00",
-      "next_run_at": "2026-07-20T10:00:00+08:00",
-      "last_run_at": "2026-07-17T10:00:21.533812+08:00",
+      "next_run_at": "2026-07-27T10:00:00+08:00",
+      "last_run_at": "2026-07-24T10:00:19.297006+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -217,15 +217,15 @@
       "schedule_display": "0 11 * * 2",
       "repeat": {
         "times": null,
-        "completed": 3
+        "completed": 4
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-08T20:36:58.094617+08:00",
-      "next_run_at": "2026-07-21T11:00:00+08:00",
-      "last_run_at": "2026-07-14T11:01:30.548563+08:00",
+      "next_run_at": "2026-07-28T11:00:00+08:00",
+      "last_run_at": "2026-07-21T11:00:18.980925+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -269,15 +269,15 @@
       "schedule_display": "0 7 * * 1",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-09T11:34:24.889780+08:00",
-      "next_run_at": "2026-07-20T07:00:00+08:00",
-      "last_run_at": "2026-07-13T07:12:52.616826+08:00",
+      "next_run_at": "2026-07-27T07:00:00+08:00",
+      "last_run_at": "2026-07-20T07:02:55.587224+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -315,15 +315,15 @@
       "schedule_display": "0 10 * * *",
       "repeat": {
         "times": null,
-        "completed": 8
+        "completed": 15
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-11T19:32:41.604938+08:00",
-      "next_run_at": "2026-07-20T10:00:00+08:00",
-      "last_run_at": "2026-07-19T10:00:59.038345+08:00",
+      "next_run_at": "2026-07-27T10:00:00+08:00",
+      "last_run_at": "2026-07-26T10:00:54.908599+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -361,16 +361,16 @@
       "schedule_display": "0 20 * * 0",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-13T23:02:07.238441+08:00",
-      "next_run_at": "2026-07-26T20:00:00+08:00",
-      "last_run_at": null,
-      "last_status": null,
+      "next_run_at": "2026-08-02T20:00:00+08:00",
+      "last_run_at": "2026-07-19T20:01:31.113487+08:00",
+      "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "origin",
@@ -384,7 +384,8 @@
       "enabled_toolsets": [
         "terminal"
       ],
-      "workdir": null
+      "workdir": null,
+      "fire_claim": null
     },
     {
       "id": "d7e46b609046",
@@ -411,15 +412,15 @@
       "schedule_display": "0 7 * * *",
       "repeat": {
         "times": null,
-        "completed": 6
+        "completed": 13
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-14T00:15:23.878183+08:00",
-      "next_run_at": "2026-07-20T07:00:00+08:00",
-      "last_run_at": "2026-07-19T07:01:11.022325+08:00",
+      "next_run_at": "2026-07-27T07:00:00+08:00",
+      "last_run_at": "2026-07-26T07:01:39.987813+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -470,7 +471,199 @@
       "origin": null,
       "enabled_toolsets": null,
       "workdir": null
+    },
+    {
+      "id": "5b6a5713e48a",
+      "name": "HN Reply Staggered Poster",
+      "prompt": "Post 3 HN reply comments from /home/ubuntu/.hermes/profiles/bot4/state/outreach_drafts_2026-07-25.json to the corresponding HN threads via the browser_navigate tool.\n\nCRITICAL RULES:\n1. Read /home/ubuntu/.hermes/profiles/bot4/state/outreach_drafts_2026-07-25.json\n2. Pick the FIRST 3 drafts that haven't been posted yet (check outreach_log_2026-07-25.json)\n3. For each: navigate to the URL, click reply, paste the draft text, submit\n4. Update outreach_log_2026-07-25.json with the 3 newly posted URLs\n5. Use Jack's existing @jackloh84 HN account\n6. Post organically \u2014 wait 2-3 minutes between posts (HN flags rapid multi-reply)\n7. If HN returns a captcha or rate limit, STOP and report to Jack\n\nNEVER modify the reply text. NEVER post more than 3 per run.\nNEVER post to threads that are [dead].",
+      "skills": [
+        "platform-policy-enforcer",
+        "humanizer"
+      ],
+      "skill": "platform-policy-enforcer",
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "minimax-cn",
+      "model_snapshot": "MiniMax-M3",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9,13,17 * * *",
+        "display": "0 9,13,17 * * *"
+      },
+      "schedule_display": "0 9,13,17 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 3
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-25T23:16:21.860839+08:00",
+      "next_run_at": "2026-07-27T09:00:00+08:00",
+      "last_run_at": "2026-07-26T17:02:23.915953+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "f1f3e880712c",
+      "name": "Self-Probe Loop + Minia2a Monitor",
+      "prompt": "Run the self-probe loop to keep minia2a activity high.\n\nSTEPS:\n1. Execute: python3 /home/ubuntu/.hermes/profiles/bot4/scripts/self_probe_loop.py\n2. Read /home/ubuntu/.hermes/profiles/bot4/state/minia2a_trial_stats.json (or curl https://www.minia2a.uk/api/services?agentId=2e83d5d4-6884-4c56-bf2c-9e9f20a0a52e if missing) to count Jack's trials + calls + volume\n3. Report: \"Loop N: X trials, Y calls, $Z.ZZ volume\"\n4. If calls > 0 AND volume > 0, that's a PAID call \u2014 flag to Jack with details\n\nThis is a background ping. Be terse.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "minimax-cn",
+      "model_snapshot": "MiniMax-M3",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */4 * * *",
+        "display": "0 */4 * * *"
+      },
+      "schedule_display": "0 */4 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 5
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-25T23:16:22.877993+08:00",
+      "next_run_at": "2026-07-27T00:00:00+08:00",
+      "last_run_at": "2026-07-26T20:02:08.136132+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "5501db7f5a91",
+      "name": "daily-earnings-9am-SGT",
+      "prompt": "Run bash /home/ubuntu/.hermes/profiles/bot4/skills/business/daily-earnings-engine/scripts/daily_earnings_report.sh and deliver the EXACT stdout back to Jack via Telegram. This is the daily-earnings-engine job \u2014 9am SGT.",
+      "skills": [
+        "daily-earnings-engine",
+        "agent-marketplace-deploy"
+      ],
+      "skill": "daily-earnings-engine",
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "minimax-cn",
+      "model_snapshot": "MiniMax-M3",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "display": "0 9 * * *"
+      },
+      "schedule_display": "0 9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-26T13:47:38.572460+08:00",
+      "next_run_at": "2026-07-27T09:00:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "fb46baf3b8b2",
+      "name": "x402-self-probe-4h",
+      "prompt": "Seed leaderboard activity on minia2a. Run python3 /home/ubuntu/.hermes/profiles/bot4/skills/business/agent-marketplace-deploy/scripts/jack-self-probe.py --url https://api.kachangsia.com/api. If exit code 0, print \"self-probe OK\" + summary of probes run. If non-zero, run the agent-service-keepalive.sh script first then retry. Use deliver=origin so Jack sees the report.",
+      "skills": [
+        "agent-marketplace-deploy",
+        "daily-earnings-engine"
+      ],
+      "skill": "agent-marketplace-deploy",
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "minimax-cn",
+      "model_snapshot": "MiniMax-M3",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */4 * * *",
+        "display": "0 */4 * * *"
+      },
+      "schedule_display": "0 */4 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 2
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-07-26T13:47:39.589059+08:00",
+      "next_run_at": "2026-07-27T00:00:00+08:00",
+      "last_run_at": "2026-07-26T20:01:20.134364+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
     }
   ],
-  "updated_at": "2026-07-19T20:00:01.560902+08:00"
+  "updated_at": "2026-07-26T20:02:08.136612+08:00"
 }
