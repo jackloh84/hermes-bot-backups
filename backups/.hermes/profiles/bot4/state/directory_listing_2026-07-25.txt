@@ -1,0 +1,22 @@
+Jack's AI Agent Service — Paid on-chain tools for AI agents
+URL: https://api.kachangsia.com
+Docs: https://api.kachangsia.com/docs
+Pricing: https://api.kachangsia.com/pricing
+
+WHAT IT DOES
+9 paid endpoints via x402 USDC on Base:
+- wallet-scan: ETH + USDC balance for any address
+- swap-quote: USDC→ETH rate + block number
+- polymarket-odds: live prediction market odds
+- polymarket-list: active markets discovery
+- token-info: ERC-20 metadata
+- token-holders: recent transfers
+- contract-risk: security flags for any Base contract
+- nft-floor: NFT collection prices
+- echo: free test endpoint
+
+PRICING
+$0.001-$0.01 USDC per call. x402 protocol — payment automatic, no API keys.
+
+OPERATOR
+Jack Loh 🇸🇬 — @jacklohai
