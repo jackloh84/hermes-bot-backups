@@ -1,0 +1,79 @@
+[
+  {
+    "author": "cphoover",
+    "story": "Monetization Gateway: Charge for any resource behind Cloudfl",
+    "url": "https://news.ycombinator.com/item?id=48752233",
+    "comment_excerpt": "This doesn&#x27;t seem to solve the issue that website operators face... which is providing a free public experience to ",
+    "reply_draft": "Saw your x402 bot-traffic point \u2014 that's exactly the wedge I'm working on. Built a paid x402 service at api.kachangsia.com (USDC on Base, $0.005-0.01/call) where humans + agents pay per call, no API keys. Free trial credits via minia2a. If you're still poking at the bot-vs-human pricing problem, happy to compare notes \u2014 what stack are you using?"
+  },
+  {
+    "author": "dudemanAtl",
+    "story": "Building for composable agentic services: nameIntel x402 via",
+    "url": "https://news.ycombinator.com/item?id=48933425",
+    "comment_excerpt": "needed a reliable component to name new projects, so I made this.  I wanted to publish it for agent discovery, so I put ",
+    "reply_draft": "nameIntel x402 via MCP is exactly the pattern. I run 9 priced endpoints at api.kachangsia.com \u2014 wallet-scan, polymarket-odds, contract-risk, etc. \u2014 all paid via x402 USDC on Base, no signup. If you want to chain your nameIntel with on-chain wallet data, the wallet-scan endpoint is $0.005/call and works today. Free trial via minia2a."
+  },
+  {
+    "author": "yieldcrv",
+    "story": "X402, a static blog monetization excercise",
+    "url": "https://news.ycombinator.com/item?id=48803799",
+    "comment_excerpt": "I think x402 interest is completely misplaced<p>Consumers that actually spend (Americans) pay with unsecured credit, cry",
+    "reply_draft": "Fair critique \u2014 unsecured credit is a real moat. Where x402 actually wins for me is agent-to-agent micro-tx (no human checkout, no interchange fee, settle in 2 sec). Doesn't replace Stripe for humans. Curious what you've seen in your 'static blog monetization exercise' \u2014 did agents actually call your endpoint?"
+  },
+  {
+    "author": "BilalBudhani",
+    "story": "Ask HN: What Are You Working On? (July 2026)",
+    "url": "https://news.ycombinator.com/item?id=48889992",
+    "comment_excerpt": "I&#x27;m building <a href=\"https:&#x2F;&#x2F;supadesk.ai\" rel=\"nofollow\">https:&#x2F;&#x2F;supadesk.ai</a> - An AI agent",
+    "reply_draft": "supadesk.ai looks like the right wedge \u2014 front-desk agents are a real budget line for SMBs. Quick question: are your agents calling external APIs (wallet lookup, contract check, anything on-chain)? I run 9 of those endpoints at api.kachangsia.com (x402 paid, no signup). If yes, I'd love to compare notes on pricing."
+  },
+  {
+    "author": "ayushpawar",
+    "story": "Ask HN: Who wants to be hired? (July 2026)",
+    "url": "https://news.ycombinator.com/item?id=48758105",
+    "comment_excerpt": "Location: Mumbai, India | Remote: Yes | Willing to relocate: Yes (with visa support) | Type: Full-time<p>Product Enginee",
+    "reply_draft": "Saw your agentic support bot work \u2014 50% containment is solid. Out of curiosity, when your bot hits a question it can't answer, does it escalate to a human, or call out to external tools? I run a paid tool-stack at api.kachangsia.com (Base RPC, polymarket, contract risk) \u2014 useful for escalation paths."
+  },
+  {
+    "author": "m00dy",
+    "story": "Ask HN: Who is hiring? (July 2026)",
+    "url": "https://news.ycombinator.com/item?id=48756786",
+    "comment_excerpt": "ProxyBase (<a href=\"https:&#x2F;&#x2F;proxybase.xyz\" rel=\"nofollow\">https:&#x2F;&#x2F;proxybase.xyz</a>) | Rust Backend ",
+    "reply_draft": "ProxyBase setup looks solid. Headless proxy + paid API stack is a tight combo. If your proxies ever need to verify a payment (USDC on Base), my contract-risk endpoint at api.kachangsia.com does the heuristic check in ~200ms for $0.01. Free trials via minia2a."
+  },
+  {
+    "author": "varun636",
+    "story": "Ask HN: Who wants to be hired? (July 2026)",
+    "url": "https://news.ycombinator.com/item?id=48748508",
+    "comment_excerpt": "Location: Vijayawada, India\nRemote: Yes (worldwide, comfortable with EU &#x2F; US-East overlap)\nWilling to relocate: Yes",
+    "reply_draft": "LangGraph + FastAPI + sandboxed Docker \u2014 that's basically my stack too. I'm running 9 paid x402 endpoints at api.kachangsia.com (Base USDC, no signup). If you ever need an on-chain tool to drop into a LangGraph agent (wallet-scan, polymarket, etc.), the free trial path is at minia2a.uk."
+  },
+  {
+    "author": "SoulForge",
+    "story": "Ask HN: Who wants to be hired? (July 2026)",
+    "url": "https://news.ycombinator.com/item?id=48761969",
+    "comment_excerpt": "Location: Phoenix, AZ, USA<p>Remote: Yes; hybrid&#x2F;onsite locally<p>Willing to relocate: Yes<p>Technologies: JavaScri",
+    "reply_draft": "Stripe + MCP + agent orchestration \u2014 your stack is exactly what x402 was built for. I run 9 paid endpoints at api.kachangsia.com (x402 USDC, no signup) that plug into MCP servers. If you're building a tool-calling agent, the contract-risk and wallet-scan endpoints are useful for any on-chain decision."
+  },
+  {
+    "author": "Floukie",
+    "story": "[dead]",
+    "url": "https://news.ycombinator.com/item?id=48762015",
+    "comment_excerpt": "VektorGeist is a digital platform for AI-powered tools, software, bots, and peer-to-peer services, used by operators and",
+    "reply_draft": "VektorGeist's agent marketplace model is the right shape. Curious \u2014 do your peer-to-peer agent services pay each other in fiat, or are you exploring x402-style crypto micro-tx? I run a paid tool stack at api.kachangsia.com that uses x402; happy to share what's working."
+  },
+  {
+    "author": "VektorGeist",
+    "story": "[dead]",
+    "url": "https://news.ycombinator.com/item?id=48728393",
+    "comment_excerpt": "VektorGeist is a digital platform for AI-powered tools, software, bots, and peer-to-peer services, used by operators and",
+    "reply_draft": "VG marketplace concept is interesting. The agent-to-agent job board is the part I'm watching \u2014 that's where x402 micro-payments actually win (no human checkout). I have 9 priced endpoints at api.kachangsia.com that could plug into VG as provider services. Open to a 10-min chat on integration?"
+  },
+  {
+    "author": "DevAutomationCC",
+    "story": "Trigger tree is now available as a CI action on GitHub too",
+    "url": "https://news.ycombinator.com/item?id=49019792",
+    "comment_excerpt": "I maintain trigger-tree, an open source Claude Code plugin that logs which project docs the agent actually opens (all lo",
+    "reply_draft": "trigger-tree solves a real problem (docs going unread by agents). Adjacent idea: my service at api.kachangsia.com logs which on-chain tools an agent actually calls during a workflow \u2014 useful for the same 'are we using what we built?' question, but on the API-call side. Might be interesting to combine."
+  }
+]
