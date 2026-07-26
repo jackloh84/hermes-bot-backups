@@ -1,0 +1,111 @@
+{
+  "ts": "2026-07-25",
+  "probes": [
+    {
+      "probe": {
+        "action": "wallet-scan",
+        "address": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045"
+      },
+      "ok": true,
+      "resp_keys": [
+        "address",
+        "chain",
+        "native_eth",
+        "usdc",
+        "scanned_at"
+      ]
+    },
+    {
+      "probe": {
+        "action": "wallet-scan",
+        "address": "0x5050e08526c4e7b3e9b3c5e8b3b9e2f9c7d6e5a4b"
+      },
+      "ok": true,
+      "resp_keys": [
+        "error",
+        "hint"
+      ]
+    },
+    {
+      "probe": {
+        "action": "swap-quote"
+      },
+      "ok": true,
+      "resp_keys": [
+        "input_usdc",
+        "estimated_eth_out",
+        "rate_usdc_per_eth",
+        "rate_eth_per_usdc",
+        "note"
+      ]
+    },
+    {
+      "probe": {
+        "action": "polymarket-odds",
+        "slug": "will-bitcoin-hit-100k-by-2027"
+      },
+      "ok": true,
+      "resp_keys": [
+        "error",
+        "slug_tried",
+        "suggestions"
+      ]
+    },
+    {
+      "probe": {
+        "action": "polymarket-list"
+      },
+      "ok": true,
+      "resp_keys": [
+        "markets",
+        "count",
+        "fetched_at"
+      ]
+    },
+    {
+      "probe": {
+        "action": "address-validate",
+        "address": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045"
+      },
+      "ok": true,
+      "resp_keys": [
+        "address",
+        "valid"
+      ]
+    },
+    {
+      "probe": {
+        "action": "token-info",
+        "contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+      },
+      "ok": true,
+      "resp_keys": [
+        "error"
+      ]
+    },
+    {
+      "probe": {
+        "action": "contract-risk",
+        "contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+      },
+      "ok": true,
+      "resp_keys": [
+        "error"
+      ]
+    },
+    {
+      "probe": {
+        "action": "echo",
+        "msg": "minia2a-self-probe-2026-07-25"
+      },
+      "ok": true,
+      "resp_keys": [
+        "echo",
+        "ts",
+        "hint"
+      ]
+    }
+  ],
+  "ok_count": 9,
+  "total": 9
+}
