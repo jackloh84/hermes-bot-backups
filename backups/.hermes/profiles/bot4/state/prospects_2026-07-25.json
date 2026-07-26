@@ -1,0 +1,149 @@
+[
+  {
+    "query": "contract+risk+scanner",
+    "author": "bmitch3020",
+    "story": "We all depend on open source. We will defend it together",
+    "comment": "There&#x27;s a massive difference between &quot;big open source&quot; and &quot;small open source&quot;. LF has been doing a great job at representing their member companies, each of which has a significant investment in big open source projects, most of which are well funded and staffed. Presumably",
+    "url": "https://news.ycombinator.com/item?id=48690139"
+  },
+  {
+    "query": "x402+service",
+    "author": "cphoover",
+    "story": "Monetization Gateway: Charge for any resource behind Cloudflare via x402",
+    "comment": "This doesn&#x27;t seem to solve the issue that website operators face... which is providing a free public experience to humans while the price of hosting is driven up by increased bot traffic. The issue isn&#x27;t charging for API access with request caps, that&#x27;s not hard to do. It&#x27;s prese",
+    "url": "https://news.ycombinator.com/item?id=48752233"
+  },
+  {
+    "query": "x402+service",
+    "author": "dudemanAtl",
+    "story": "Building for composable agentic services: nameIntel x402 via MCP",
+    "comment": "needed a reliable component to name new projects, so I made this.  I wanted to publish it for agent discovery, so I put it out as an MCP and your agent can pay a couple pennies without signing up for an account and without a huge interchange fee.<p>the x402 protocol is awesome. hope you can get some",
+    "url": "https://news.ycombinator.com/item?id=48933425"
+  },
+  {
+    "query": "x402+service",
+    "author": "yieldcrv",
+    "story": "X402, a static blog monetization excercise",
+    "comment": "I think x402 interest is completely misplaced<p>Consumers that actually spend (Americans) pay with unsecured credit, crypto ecosystem doesn&#x27;t have robust <i>unsecured</i> credit systems. It has plenty of secured credit systems though because it is extremely optimal at collecting collateral and ",
+    "url": "https://news.ycombinator.com/item?id=48803799"
+  },
+  {
+    "query": "ai+agent+tool",
+    "author": "BilalBudhani",
+    "story": "Ask HN: What Are You Working On? (July 2026)",
+    "comment": "I&#x27;m building <a href=\"https:&#x2F;&#x2F;supadesk.ai\" rel=\"nofollow\">https:&#x2F;&#x2F;supadesk.ai</a> - An AI agent platform to help businesses manage their front-desk.<p>I launched beta last month with a couple of customers in pilot phase. It has been great learning experiencing building my fi",
+    "url": "https://news.ycombinator.com/item?id=48889992"
+  },
+  {
+    "query": "ai+agent+tool",
+    "author": "ayushpawar",
+    "story": "Ask HN: Who wants to be hired? (July 2026)",
+    "comment": "Location: Mumbai, India | Remote: Yes | Willing to relocate: Yes (with visa support) | Type: Full-time<p>Product Engineer with 3 years building AI-native products end-to-end at Mosaic Wellness (health-tech).<p>Things I&#x27;ve shipped without being asked:\n- Agentic AI support bot: noticed 50% of con",
+    "url": "https://news.ycombinator.com/item?id=48758105"
+  },
+  {
+    "query": "ai+agent+tool",
+    "author": "m00dy",
+    "story": "Ask HN: Who is hiring? (July 2026)",
+    "comment": "ProxyBase (<a href=\"https:&#x2F;&#x2F;proxybase.xyz\" rel=\"nofollow\">https:&#x2F;&#x2F;proxybase.xyz</a>) | Rust Backend Engineers &amp; Full-Stack Developers | Remote (Global) | Full-Time | $100k-$160k + Equity<p>Hey HN, we\u2019re ProxyBase. We\u2019re building an API-first, fully headless SOCKS5 proxy netwo",
+    "url": "https://news.ycombinator.com/item?id=48756786"
+  },
+  {
+    "query": "ai+agent+tool",
+    "author": "varun636",
+    "story": "Ask HN: Who wants to be hired? (July 2026)",
+    "comment": "Location: Vijayawada, India\nRemote: Yes (worldwide, comfortable with EU &#x2F; US-East overlap)\nWilling to relocate: Yes\nTechnologies: Python, FastAPI, LangGraph, Docker (Sandboxing), Threading&#x2F;Queue Concurrency, SQLite (WAL), MQL5, React\nGitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;srira",
+    "url": "https://news.ycombinator.com/item?id=48748508"
+  },
+  {
+    "query": "ai+agent+tool",
+    "author": "ksaun",
+    "story": "Ask HN: What Are You Working On? (July 2026)",
+    "comment": "Re: superpowers&#x2F;brainstorming: in an attempt to be more helpful, below are a couple examples of prompts I used. (I&#x27;ve been surprised at how infrequently people talking about genAI share their prompt text.)<p>I&#x27;ve found it&#x27;s fine to start &#x2F;brainstorming in a new session; Clau",
+    "url": "https://news.ycombinator.com/item?id=48938018"
+  },
+  {
+    "query": "agent+marketplace",
+    "author": "SoulForge",
+    "story": "Ask HN: Who wants to be hired? (July 2026)",
+    "comment": "Location: Phoenix, AZ, USA<p>Remote: Yes; hybrid&#x2F;onsite locally<p>Willing to relocate: Yes<p>Technologies: JavaScript&#x2F;TypeScript, React, Next.js, Drizzle ORM, PostgreSQL, Python, Modal, Vercel AI SDK, MCP, agent workflows and orchestration, Claude Code and other AI coding tools, Stripe, Cl",
+    "url": "https://news.ycombinator.com/item?id=48761969"
+  },
+  {
+    "query": "agent+marketplace",
+    "author": "Floukie",
+    "story": "[dead]",
+    "comment": "VektorGeist is a digital platform for AI-powered tools, software, bots, and peer-to-peer services, used by operators and their AI agents. The Platform includes a marketplace for downloadable digital products, a job board where users may post and accept work, community features (the VG Social feed, b",
+    "url": "https://news.ycombinator.com/item?id=48762015"
+  },
+  {
+    "query": "agent+marketplace",
+    "author": "VektorGeist",
+    "story": "[dead]",
+    "comment": "VektorGeist is a digital platform for AI-powered tools, software, bots, and peer-to-peer services, used by operators and their AI agents. The Platform includes a marketplace for downloadable digital products, a job board where users may post and accept work, community features (the VG Social feed, b",
+    "url": "https://news.ycombinator.com/item?id=48728393"
+  },
+  {
+    "query": "agent+marketplace",
+    "author": "DevAutomationCC",
+    "story": "Trigger tree is now available as a CI action on GitHub too",
+    "comment": "I maintain trigger-tree, an open source Claude Code plugin that logs which project docs the agent actually opens (all local no tokens). I built it after finding out most of my carefully written docs sometimes seemed to be ignored by AI...<p>Today I added a CI gate which checks whether your docs are ",
+    "url": "https://news.ycombinator.com/item?id=49019792"
+  },
+  {
+    "query": "agent+marketplace",
+    "author": "mvl",
+    "story": "MD Editor",
+    "comment": "Hey,<p>I\u2019ve built a (Stellar) MD Editor \u2014 nothing fancy, but if you, like me, have piles of Markdown files living in Google Drive for a hive of agents to communicate through, or a handful of websites to pull content from, you\u2019ll probably love it.<p>No ads, no paywall, no data scraping. Plain and sim",
+    "url": "https://news.ycombinator.com/item?id=49019205"
+  },
+  {
+    "query": "usdc+payment+api",
+    "author": "TIMU619",
+    "story": "An autonomous AI agent that sells its own API access via x402 payment protocol",
+    "comment": "I built an experiment: an AI agent that owns its own crypto wallet, earns money by selling a paid text-summarization API (priced in USDC via the x402 protocol), and uses Claude to autonomously decide on pricing based on real earnings vs. its own Claude API costs. It&#x27;s live on Base mainnet right",
+    "url": "https://news.ycombinator.com/item?id=48976842"
+  },
+  {
+    "query": "usdc+payment+api",
+    "author": "mcdoolz",
+    "story": "[dead]",
+    "comment": "I generate this little application some time back to calculate amounts of money over periods of time, after exchange.\nThere exists a database that tracks this data so I&#x27;ve leveraged their free API to provide this tool that will calculate a cyclical amount over the course of a chronology and pro",
+    "url": "https://news.ycombinator.com/item?id=49014420"
+  },
+  {
+    "query": "base+chain+tool",
+    "author": "superboum",
+    "story": "Stop saying that AI is just a tool and it only matters how it is used",
+    "comment": "I expected to find the following techno-critic arguments in this blog post, but did not really find them. Here they are, Hacker News!<p>[Tools do not exist in the void but in a society]. You can&#x27;t study tools without studying the context that created it. Some tools work in some society, some ot",
+    "url": "https://news.ycombinator.com/item?id=48930979"
+  },
+  {
+    "query": "base+chain+tool",
+    "author": "jijijijij",
+    "story": "Why current LLM costs are not sustainable",
+    "comment": "&gt; Any advance could be dismissed as &quot;case-specific&quot;, couldn&#x27;t it?<p>and<p>&gt; If by &quot;counting&quot; you mean the &quot;counting r&#x27;s&quot; issue, that&#x27;s a tokenisation artifact (the models are blind to individual characters): ask it to count in Python and it&#x27;s f",
+    "url": "https://news.ycombinator.com/item?id=48717098"
+  },
+  {
+    "query": "base+chain+tool",
+    "author": "robomartin",
+    "story": "Mexican government unveils a prototype for a new homegrown, ultra-affordable EV",
+    "comment": "This is not political or even about Trump.<p>I manufacture products.  I have been in manufacturing for decades.  These are products with electronics, mechanical assemblies, software, etc.<p>I used to manufacture in the US. For a while, this worked out OK.<p>The competitors started to move production",
+    "url": "https://news.ycombinator.com/item?id=48675352"
+  },
+  {
+    "query": "minia2a",
+    "author": "lompad",
+    "story": "Taylor Farms Called White House to Try to Delay Cyclospora Recall",
+    "comment": "Raw milk _can_ be kind of okay under very specific circumstances. (But knowing the state american farms tend to be in regarding hygiene and controls, it&#x27;s a ridiculous gamble.)<p>1) extremely closely controlled cow health<p>2) minimal storage time<p>3) minimized chances of cross contamination&#",
+    "url": "https://news.ycombinator.com/item?id=49046484"
+  },
+  {
+    "query": "minia2a",
+    "author": "tkgally",
+    "story": "Extinct Media Museum Tokyo",
+    "comment": "Some other museums to visit while you\u2019re in Tokyo:<p>JCII Camera Museum\n<a href=\"https:&#x2F;&#x2F;www.jcii-cameramuseum.jp&#x2F;top-e&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.jcii-cameramuseum.jp&#x2F;top-e&#x2F;</a><p>Small Worlds Miniature Museum\n<a href=\"https:&#x2F;&#x2F;smallworlds.jp&#x2F;",
+    "url": "https://news.ycombinator.com/item?id=49046259"
+  }
+]
