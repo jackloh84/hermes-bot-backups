@@ -1,0 +1,21 @@
+{
+  "platform": "Skyfire",
+  "status": "SERVICE_CREATED",
+  "created_at": "2026-08-05",
+  "service_id": "97f5f545-f2af-4ee5-82e7-407befcbd725",
+  "name": "Kachang Web3 Tools API",
+  "type": "API",
+  "price": "0.005",
+  "price_model": "PAY_PER_USE",
+  "minimum_token_amount": "0.01",
+  "seller_id": "5c8cbf56-b57f-44a2-9867-9f39fc020546",
+  "seller_name": "Kachang Sia — AI Automation Studio",
+  "open_api_spec_url": "https://api.kachangsia.com/openapi.json",
+  "accepted_tokens": ["kya", "pay", "kya-pay"],
+  "settlement": "USDC on Base",
+  "approval": "pending (24-48h review per docs)",
+  "keys": {
+    "buyer_key": "saved in .env (SKYFIRE_API_KEY)",
+    "seller_key": "saved in .env (SKYFIRE_SELLER_API_KEY)"
+  }
+}
