@@ -4,14 +4,28 @@ Bluesky auto-poster for Jack Loh Gumroad products.
 Policy-compliant: self-labeling, grapheme limit, AI disclosure, random posting.
 """
 from pathlib import Path
-import random, datetime, re
+import os, random, datetime, re
 from atproto import Client
 
-# ── Config ──
-HANDLE = "jackloh84.bsky.social"
-APP_PASSWORD = "2hnm-3dhm-lvsy-muz2"
+# ── Load .env (cron runs without inherited env, so load explicitly) ──
+def _load_env():
+    env_path = Path("/home/ubuntu/.hermes/profiles/bot4/.env")
+    if not env_path.exists():
+        return
+    for line in env_path.read_text().splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        k, v = line.split("=", 1)
+        os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
 
-PROFILE_DIR = Path.home() / ".hermes" / "profiles" / "bot4"
+_load_env()
+
+# ── Config ──
+HANDLE = os.environ.get("BSKY_HANDLE", "jackloh84.bsky.social")
+APP_PASSWORD = os.environ.get("BSKY_APP_PASSWORD", "")
+
+PROFILE_DIR = Path("/home/ubuntu/.hermes/profiles/bot4")
 STATE_FILE = PROFILE_DIR / "state" / "bluesky_last_product.txt"
 SKIP_LOG = PROFILE_DIR / "state" / "bluesky_skip_log.txt"
 POLICY_LOG = PROFILE_DIR / "state" / "bluesky_policy_check.txt"
@@ -228,6 +242,10 @@ def main():
         print(f"  ⚠️  {w}")
     
     # ── POST ──
+    if not APP_PASSWORD:
+        print("❌ BSKY_APP_PASSWORD env var is empty — refusing to post.")
+        print("   Set it in ~/.hermes/profiles/bot4/.env or export before running.")
+        return 2
     client = Client()
     client.login(HANDLE, APP_PASSWORD)
     
