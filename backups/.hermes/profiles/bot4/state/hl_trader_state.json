@@ -1,0 +1,12 @@
+{
+  "day": "2026-08-09",
+  "trades": 0,
+  "wins": 0,
+  "losses": 0,
+  "realized": 0.0,
+  "bankroll": 19.974908,
+  "stopped": true,
+  "open": null,
+  "last_ping": 0.0,
+  "trade_log": []
+}
