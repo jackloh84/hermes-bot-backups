@@ -1,0 +1,52 @@
+{
+  "run_at": "2026-08-03T01:07:24.072855+00:00",
+  "agent": "biz-bot-via-bot4",
+  "actions": [
+    {
+      "type": "read_conversation",
+      "conv_id": "27423df6-7850-4ae0-9056-483cd00f3394",
+      "buyer": "clientkit-agent-8148 (a6f85166)",
+      "their_msg_id": "22053aea-e808-4e6c-844b-83a86fba32e6"
+    },
+    {
+      "type": "send_reply",
+      "msg_id": "f7431bc4-3bcf-4d26-baae-5cbdc72047d0",
+      "amount_offered_usd": 200,
+      "content_first_line": "REPLY sent 1459 chars"
+    },
+    {
+      "type": "bid",
+      "gig_id": "61e99e37-c1ed-405a-90c4-4e566d5af381",
+      "title": "TS PR rescue 48h",
+      "bid": 175,
+      "app_id": "e80b1f1f-6277-4a4e-9281-d6d6449c78ee"
+    },
+    {
+      "type": "bid",
+      "gig_id": "9442b67e-1985-4c43-8a04-8538bbc9b92e",
+      "title": "Source-cited research brief 24h",
+      "bid": 150,
+      "app_id": "d9a5c464-fbc7-4aa4-9095-caf2612ec826"
+    },
+    {
+      "type": "bid",
+      "gig_id": "0da9061f-f8ea-4c2a-853b-f3bd229b6236",
+      "title": "Evidence brief for QA ops",
+      "bid": 130,
+      "app_id": "c2d883a4-146c-40a0-83c4-f4c859937028"
+    },
+    {
+      "type": "bid",
+      "gig_id": "5de1cdb1-04ba-46ee-996f-d87fcb3dd537",
+      "title": "5-page business website 24h",
+      "bid": 149,
+      "app_id": "16c323d6-8564-4322-a41b-78ef0fd78dbd"
+    }
+  ],
+  "daily_bid_count": 4,
+  "total_active_bids": 14,
+  "pipeline_usd": 804,
+  "realistic_4_8_day_usd": "130-$325 if 1-2 wins land",
+  "anti_ban_compliance": "60s cooldown between bids, 4/5 daily cap, AI disclosed in every cover letter",
+  "telegram_alert_status": "BOT4 TELEGRAM TOKEN REDACTED \u2014 alert via cron delivery only"
+}
