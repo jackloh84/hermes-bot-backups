@@ -1,0 +1,16 @@
+{
+  "platform": "RapidAPI",
+  "status": "LIVE",
+  "url": "https://rapidapi.com/bizbot2026/api/kachang-web3-tools-api",
+  "name": "Kachang Web3 Tools API",
+  "username": "bizbot2026",
+  "price": "0.005 per request",
+  "fee": "25% marketplace fee",
+  "payout": "PayPal (30-60d lag)",
+  "created_at": "2026-08-05",
+  "keys": {
+    "api_key": "saved in .env (RAPIDAPI_API_KEY)",
+    "proxy_secret": "saved in .env (RAPIDAPI_PROXY_SECRET)"
+  },
+  "endpoints": ["wallet-scan", "token-info", "address-validate", "swap-quote", "contract-risk", "nft-floor"]
+}
