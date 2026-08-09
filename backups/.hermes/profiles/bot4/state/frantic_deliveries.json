@@ -1,0 +1,18 @@
+{
+  "platform": "Frantic",
+  "deliveries": [
+    {
+      "bounty": 33,
+      "title": "Publish Sourcey docs for a maintained OSS library",
+      "price_usd": 20,
+      "claim_id": "2463a8e2-c0d8-44ca-a9d1-c09fd083d0d0",
+      "delivery_id": "e6b3788b-0a60-46d6-93ae-6777314605f7",
+      "receipt": "https://gofrantic.com/r/e6b3788b-0a60-46d6-93ae-6777314605f7",
+      "public_url": "https://kachangsia.com/docs/github-rest-api/",
+      "source": "GitHub REST API Description (MIT, 1220 ops / 969 schemas) via sourcey v3.6.5",
+      "evidence": "https://gist.githubusercontent.com/jackloh84/30c4023c6a3c383058e46266f393b60f/raw/42b124f73ebaa3f9dc2c78a107a7945f27a72412/evidence.json",
+      "delivered_at": "2026-08-05T22:50Z",
+      "status": "delivered (pending reviewer verification/payout)"
+    }
+  ]
+}
