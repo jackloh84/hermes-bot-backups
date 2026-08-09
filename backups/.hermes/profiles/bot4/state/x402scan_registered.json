@@ -1,0 +1,33 @@
+{
+  "platform": "x402scan",
+  "status": "REGISTERED",
+  "registered_at": "2026-08-04T13:2x:xxZ",
+  "response": {
+    "success": true,
+    "registered": 3,
+    "public": 4,
+    "failed": 0,
+    "skipped": 0,
+    "total": 7,
+    "contactEmail": "sales@kachangsia.com"
+  },
+  "origin": "https://api.kachangsia.com",
+  "paid_resources": [
+    {"url": "https://api.kachangsia.com/", "method": "POST", "price": "0.005 USD", "protocol": "x402"},
+    {"url": "https://api.kachangsia.com/agent", "method": "POST", "price": "0.005 USD", "protocol": "x402"},
+    {"url": "https://api.kachangsia.com/api", "method": "POST", "price": "0.005 USD", "protocol": "x402"}
+  ],
+  "public_resources": [
+    {"url": "https://api.kachangsia.com/", "method": "GET"},
+    {"url": "https://api.kachangsia.com/health", "method": "GET"},
+    {"url": "https://api.kachangsia.com/pricing", "method": "GET"},
+    {"url": "https://api.kachangsia.com/api/services", "method": "GET"}
+  ],
+  "how": "SIWX EIP-191 signature from HOT wallet 0x57E33b7aEC4DdcDe614C3BeCBb34126914e4f813, sent via sign-in-with-x header (base64 payload). Script: scripts/x402scan_register.py",
+  "key_fixes": [
+    "payment-required header (base64 JSON, x402Version 2)",
+    "x-payment-protocol: x402 header",
+    "accepts[] needs asset (not just currency), network eip155:8453, scheme, payTo, maxTimeoutSeconds: 300",
+    "resource must be object {url, mimeType}, not string"
+  ]
+}
