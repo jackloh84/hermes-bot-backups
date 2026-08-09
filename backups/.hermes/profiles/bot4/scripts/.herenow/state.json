@@ -1,0 +1,10 @@
+{
+  "publishes": {
+    "crisp-zephyr-fkff": {
+      "siteUrl": "https://crisp-zephyr-fkff.here.now/"
+    },
+    "ground-bamboo-kxeh": {
+      "siteUrl": "https://ground-bamboo-kxeh.here.now/"
+    }
+  }
+}
