@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Background self-probe loop - keeps minia2a activity high.
-Probes all 9 endpoints every 4 hours so Jack's services stay visible
-in the leaderboard. x402 USDC payment not needed for self-probe
-because minia2a gives free trial credits.
+Probes all endpoints every 4 hours. NOTE (Aug 5 2026): since service v2.3.0 the
+paid endpoints return HTTP 402 (x402 paywall) to probes without X-PAYMENT — that
+is EXPECTED (endpoint alive + monetized), counted as "gated", NOT a failure.
 """
-import urllib.request, json, time, os
+import urllib.request, urllib.error, json, time, os
 from pathlib import Path
 
 ENDPOINT = "https://api.kachangsia.com/api"
@@ -25,6 +25,7 @@ PROBES = [
 def probe():
     ts = time.strftime("%Y-%m-%d %H:%M:%S")
     ok = 0
+    gate = 0
     for p in PROBES:
         try:
             req = urllib.request.Request(ENDPOINT, data=json.dumps(p).encode(),
@@ -33,11 +34,20 @@ def probe():
             with urllib.request.urlopen(req, timeout=10) as r:
                 resp = json.loads(r.read())
                 ok += 1
+        except urllib.error.HTTPError as e:
+            # 402 = x402 paywall active (endpoint alive + monetized since v2.3.0,
+            # Aug 4 2026). Count as gate, not failure — probes without X-PAYMENT
+            # legitimately get 402 on paid actions.
+            if e.code == 402:
+                gate += 1
+            else:
+                with open(LOG, "a") as f:
+                    f.write(f"[{ts}] FAIL {p.get('action')}: HTTP {e.code}\n")
         except Exception as e:
             with open(LOG, "a") as f:
                 f.write(f"[{ts}] FAIL {p.get('action')}: {e}\n")
         time.sleep(0.3)
-    line = f"[{ts}] Probed {ok}/{len(PROBES)} endpoints OK\n"
+    line = f"[{ts}] Probed {ok}/{len(PROBES)} endpoints OK ({gate} gated by x402 paywall)\n"
     with open(LOG, "a") as f:
         f.write(line)
     print(line.strip())
