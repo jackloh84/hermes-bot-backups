@@ -1,0 +1,16 @@
+{
+  "date": "2026-08-04",
+  "type": "clientkit-evidence-reply",
+  "conversation_id": "27423df6-7850-4ae0-9056-483cd00f3394",
+  "message_id": "798cd00e-be7f-4d91-9662-7619158d718c",
+  "what": "Fixed receipt-reconcile x402 gate (was: no 402 challenge, /api/services 404, health missing route). Service now v2.2.0: 402 challenge without X-PAYMENT, on-chain payment verification, /api/services registry, /health+openapi updated.",
+  "evidence_tx": "0x425edb59389108abe95ebe66940cab83fc5ff5544e900ed15612c18f7e7944e4",
+  "all_checks": {
+    "registry_200": true,
+    "no_payment_402": true,
+    "valid_payment_200_match": true,
+    "invalid_payment_402": true,
+    "public_api_kachangsia_com": true
+  },
+  "pending": "Buyer review + $200 escrow release"
+}
