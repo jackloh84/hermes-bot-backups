@@ -1,0 +1,41 @@
+{
+  "day": "2026-08-09",
+  "trades": 2,
+  "wins": 0,
+  "losses": 2,
+  "realized": -1.6476664969461008,
+  "bankroll": 47.8423335030539,
+  "stopped": false,
+  "open": null,
+  "last_ping": 1786262400.5764287,
+  "trade_log": [
+    {
+      "ts": 1786241333.449942,
+      "pair": "BTCUSD",
+      "direction": "LONG",
+      "entry": 64940.136,
+      "tp": 65357.86028571428,
+      "sl": 64661.65314285714,
+      "collateral": 1.43,
+      "leverage": 200,
+      "strength": 0.68,
+      "lock_pct": 0.5,
+      "result": "SL-AUTO",
+      "pnl": -1.2264541168016283
+    },
+    {
+      "ts": 1786262640.30305,
+      "pair": "PAIR0",
+      "direction": "SHORT",
+      "entry": 64733.8985342939,
+      "tp": 64612.57242857143,
+      "sl": 64829.23671428572,
+      "collateral": 1.43,
+      "leverage": 200.0,
+      "strength": 0.53,
+      "lock_pct": 0.5,
+      "result": "SL",
+      "pnl": -0.4212123801444724
+    }
+  ]
+}
