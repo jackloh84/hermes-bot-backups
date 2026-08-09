@@ -9,7 +9,7 @@ import urllib.request
 import urllib.error
 import time
 
-LIVE_TUNNEL = "https://alfred-tyler-captured-optimize.trycloudflare.com/api"
+LIVE_TUNNEL = "https://api.kachangsia.com/api"
 WALLET = "0xf52af41e893c1f230a3db3bd07cd8417b2277e5c"
 AGENT = "Jack Loh @jacklohai"
 
