@@ -1,0 +1,26 @@
+{
+  "session_date_utc": "2026-08-04",
+  "actions_taken": [
+    {
+      "lane": "frantic",
+      "bounty": 49,
+      "title": "Give runx some love",
+      "type": "goodwill",
+      "payout": "3 days Frantic runway on accept (reputation currency in 344-operator ecosystem)",
+      "github_issue_filed": "https://github.com/runxhq/runx/issues/381",
+      "gist_published": "https://gist.github.com/jackloh84/6e9588b7cf6a245909f652ffed0bfa5c",
+      "claim_id": "frantic:claim:27d3f897-55e5-409e-a343-1de5d1fb4ca7",
+      "delivery_id": "frantic:delivery:eb1de174-7cfd-4dd6-b878-8beb7b822220",
+      "preflight_ok": true,
+      "status": "delivery_accepted_pending_verification"
+    },
+    {
+      "lane": "theagenttimes",
+      "bounty": null,
+      "title": "Lightning comments x3 on fresh articles",
+      "type": "auto_cite",
+      "payout": "sats per comment (rate ~0.05-1 per run)",
+      "comment_ids": [1066937, 1066938, 1066939]
+    }
+  ]
+}
