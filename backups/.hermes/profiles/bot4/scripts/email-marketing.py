@@ -15,7 +15,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 # ── Config ──
-BASE_DIR = Path.home() / ".hermes" / "profiles" / "bot4" / "state" / "email-marketing"
+BASE_DIR = Path("/home/ubuntu/.hermes/profiles/bot4/state/email-marketing")
 LEADS_FILE = BASE_DIR / "leads.json"
 CAMPAIGNS_FILE = BASE_DIR / "campaigns.json"
 BASE_DIR.mkdir(parents=True, exist_ok=True)
