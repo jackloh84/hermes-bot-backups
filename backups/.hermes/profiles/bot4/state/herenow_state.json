@@ -1,0 +1,72 @@
+{
+  "publishes": {
+    "poppy-mango-5nbg": {
+      "siteUrl": "https://poppy-mango-5nbg.here.now/",
+      "lead": "TikTok Hooks #1",
+      "code": "VIRALFIRST",
+      "bytes": 9499,
+      "auth_mode": "anonymous",
+      "published_at": "2026-08-02"
+    },
+    "lapis-soul-eqp3": {
+      "siteUrl": "https://lapis-soul-eqp3.here.now/",
+      "note": "placeholder stub"
+    },
+    "queued-pillar-hwxr": {
+      "siteUrl": "https://queued-pillar-hwxr.here.now/"
+    },
+    "dusty-silence-ex46": {
+      "siteUrl": "https://dusty-silence-ex46.here.now/",
+      "lead": "TikTok Hooks #1",
+      "code": "VIRALFIRST",
+      "bytes": 9499,
+      "auth_mode": "authenticated",
+      "published_at": "2026-08-02"
+    },
+    "dusty-gorge-zgxc": {
+      "siteUrl": "https://dusty-gorge-zgxc.here.now/",
+      "lead": "Content Creators Vol 2 #2",
+      "code": "CREATOR30",
+      "bytes": 11268,
+      "auth_mode": "authenticated",
+      "published_at": "2026-08-03"
+    },
+    "ebony-rivulet-m7gx": {
+      "siteUrl": "https://ebony-rivulet-m7gx.here.now/",
+      "lead": "Brain Reset FREE #5",
+      "cross_sells": ["LAUNCH20", "VIRALFIRST", "CREATOR30", "LAUNCH50"],
+      "bytes": 16931,
+      "auth_mode": "authenticated",
+      "published_at": "2026-08-04"
+    },
+    "crisp-zephyr-fkff": {
+      "siteUrl": "https://crisp-zephyr-fkff.here.now/",
+      "lead": "Content Creators Vol 2 #2",
+      "code": "CREATOR30",
+      "cross_sells": ["VIRALFIRST", "LAUNCH50", "LAUNCH20"],
+      "bytes": 12271,
+      "auth_mode": "authenticated",
+      "persistence": "permanent",
+      "published_at": "2026-08-05"
+    },
+    "ground-bamboo-kxeh": {
+      "siteUrl": "https://ground-bamboo-kxeh.here.now/",
+      "lead": "Business Automation Pack #3",
+      "code": "CREATOR30",
+      "cross_sells": ["VIRALFIRST", "CREATOR30-Vol2", "LAUNCH20"],
+      "bytes": 8836,
+      "auth_mode": "authenticated",
+      "persistence": "permanent",
+      "published_at": "2026-08-07",
+      "seo_keyword": "AI business automation prompts stop doing admin 2026",
+      "verification": {
+        "http_200": true,
+        "title_match": true,
+        "code_mentions": 6,
+        "canonical": "https://jackalope86.gumroad.com/l/byrjla",
+        "cta_count": 2,
+        "cta_destinations": ["byrjla", "dgdtjf"]
+      }
+    }
+  }
+}
