@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "cross-keychain": "^1.1.0",
+    "keytar": "^7.9.0",
+    "viem": "^2.55.11"
+  }
+}
