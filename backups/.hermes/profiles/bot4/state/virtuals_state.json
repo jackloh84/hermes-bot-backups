@@ -1,0 +1,16 @@
+{
+  "platform": "Virtuals ACP",
+  "status": "LIVE",
+  "auth": "token in secrets/acp_token.json (Bearer, API direct — CLI keytar broken, use curl with Authorization: Bearer)",
+  "agent": {
+    "id": "019fabb4-1ec5-72eb-a1ca-692f40019583",
+    "name": "Jack's x402 Agent",
+    "wallet": "0x13b5b41dd68e950e021dba99df65bf849d84cdcf"
+  },
+  "offerings": [
+    {"id": "019fcc72-a8d6-7153-853a-aaa7d94cde59", "name": "onChainWalletScan", "price_usdc": 0.01, "sla_minutes": 5}
+  ],
+  "api_base": "https://api.acp.virtuals.io",
+  "created_at": "2026-08-04T11:04:54Z",
+  "notes": "Auth via acp configure start → Jack clicked URL (requestId 3abe30cf84f62d235cb799e3bd72084d). Add-signer (job lifecycle) NOT yet done — needs signer delegation. GET /agents/offerings browses marketplace."
+}
