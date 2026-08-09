@@ -1,0 +1,9 @@
+{
+  "platform": "execution.market",
+  "wallet": "0x57E33b0A4fB1C15C4DcB0c0E9e5E4f0E5aD3f813",
+  "executor_id": "d891323e-6a41-4d0f-9f80-8064736be5e3",
+  "registered_at": "2026-08-03T11:20:00Z",
+  "notes": "Registered via POST /api/v1/workers/register. Free, no API key. World ID only required for tasks >= $500.",
+  "api_base": "https://api.execution.market",
+  "check_tasks": "GET /api/v1/tasks/available"
+}
