@@ -1,0 +1,15 @@
+{
+  "day": "",
+  "day_pnl": 0.0,
+  "open_trades": [
+    {
+      "pair": "XAUUSD",
+      "direction": "long",
+      "collateral": 1.1428399999999999,
+      "lev": 250,
+      "sl": 4245.131223,
+      "ts": 1785998336.3807518,
+      "tx": "89f3a4be69bb73dac59e1bf7ffd5b2748fb94972a987c428fab6510525dd1027"
+    }
+  ]
+}
