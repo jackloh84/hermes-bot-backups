@@ -1,0 +1,65 @@
+#!/usr/bin/env python3
+"""Mine HN Algolia for x402 / agent-tool prospects (Pitfall #29).
+Outputs: /home/ubuntu/.hermes/profiles/bot4/state/prospects_<date>.json
+"""
+import json, time, urllib.request, re, sys
+from datetime import datetime, timezone
+
+API = "https://hn.algolia.com/api/v1/search"
+SINCE = int(time.time()) - 30 * 86400
+
+QUERIES = [
+    "x402+service", "ai+agent+tool", "agent+marketplace",
+    "usdc+payment+api", "base+chain+tool", "swap+quote+api",
+    "minia2a", "bountybook", "agent+task", "ai+bounty",
+    "defi+api", "polymarket+api", "wallet+scan",
+]
+
+# Filter: comment must mention buyer intent
+INTENT = re.compile(r"\b(need|looking|want|build|api|tool|agent|hire|service|pay|paid|earn|spend|integration|integrate|endpoint)\b", re.IGNORECASE)
+
+prospects = []
+seen_authors = set()
+
+for q in QUERIES:
+    url = f"{API}?query={q}&tags=comment&numericFilters=created_at_i>{SINCE}&hitsPerPage=10"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            data = json.loads(r.read())
+    except Exception as e:
+        print(f"[err] {q}: {e}")
+        continue
+    for h in data.get("hits", []):
+        author = h.get("author") or ""
+        comment = h.get("comment_text") or ""
+        if not author or not comment or author in seen_authors:
+            continue
+        if not INTENT.search(comment):
+            continue
+        prospects.append({
+            "author": author,
+            "story_title": h.get("story_title") or h.get("title", ""),
+            "comment": comment[:400],
+            "url": f"https://news.ycombinator.com/item?id={h['objectID']}",
+            "query": q,
+            "points": h.get("points", 0),
+            "created_at": datetime.fromtimestamp(h.get("created_at_i", 0), tz=timezone.utc).isoformat(),
+        })
+        seen_authors.add(author)
+
+# Sort by recency then points
+prospects.sort(key=lambda p: (p["created_at"], p.get("points", 0)), reverse=True)
+
+# Save
+out = f"/home/ubuntu/.hermes/profiles/bot4/state/prospects_{datetime.now(timezone.utc).strftime('%Y-%m-%d')}.json"
+import os
+os.makedirs(os.path.dirname(out), exist_ok=True)
+with open(out, "w") as f:
+    json.dump({"queried_at": datetime.now(timezone.utc).isoformat(), "count": len(prospects), "prospects": prospects}, f, indent=2)
+
+print(f"[hn-mine] {len(prospects)} prospects saved to {out}")
+# Show top 10
+for p in prospects[:10]:
+    print(f"  @{p['author']:<20} | {p['story_title'][:50]:<50} | {p['created_at'][:10]}")
+    print(f"    {p['comment'][:150]}...")
