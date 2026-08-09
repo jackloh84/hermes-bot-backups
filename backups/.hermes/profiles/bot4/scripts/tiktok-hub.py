@@ -11,7 +11,7 @@ Workflow:
 import json, datetime
 from pathlib import Path
 
-HUB_DIR = Path.home() / ".hermes" / "profiles" / "bot4" / "state" / "tiktok-hub"
+HUB_DIR = Path("/home/ubuntu/.hermes/profiles/bot4/state/tiktok-hub")
 TASKS_FILE = HUB_DIR / "tasks.json"
 HUB_DIR.mkdir(parents=True, exist_ok=True)
 
