@@ -1,0 +1,33 @@
+date: 2026-07-31
+mission: gumroad-sales-bot
+result: ZERO SALES
+lifetime_sales: 0
+
+actions_taken:
+  - DEV.to article id 4278165 published (I Replaced 6 Hours of Weekly Business Admin, lead=AI Business Automation SGD$19, 4-min read)
+  - HTML landing page shipped at /home/ubuntu/gumroad-promo/biz-automation-2026-07-31.html (11730 bytes, OG tags)
+  - Multi-platform marketing copy bundle shipped at /home/ubuntu/gumroad-promo/marketing-copy-biz-automation-2026-07-31.txt (10 platforms)
+  - Next-cycle Telegram draft saved at /tmp/tg-promo-biz-automation-2026-08-02.txt (fires when 48h cap clears Aug 2 ~08:00 SGT)
+  - Skip-log entry appended (TG under 48h cap + Bluesky reserved + DEV.to fired)
+  - Rotation state advanced 2 → 3 (product 3 = AI Business Automation now primary)
+  - Jack DM delivered via CS Bot, message_id=531
+
+verification:
+  devto_article_id: 4278165
+  devto_url: https://dev.to/jackloh84/i-replaced-6-hours-of-weekly-business-admin-with-one-prompt-pack-here-595b
+  devto_published_at: 2026-07-31T07:08:22Z
+  html_path: /home/ubuntu/gumroad-promo/biz-automation-2026-07-31.html
+  marketing_copy_path: /home/ubuntu/gumroad-promo/marketing-copy-biz-automation-2026-07-31.txt
+  jack_dm_message_id: 531
+
+codes_promoted: [VIRALFIRST, LAUNCH50, HOOKS25]
+pre_flight_audit:
+  - lifetime_sales_cache: 0 (verified via Gumroad API)
+  - telegram_48h_cap: CLOSED (7.0h ago)
+  - devto_last_article: 32.0h ago (OPEN, eligible to publish)
+  - bluesky_lane: SKIP (dedicated random-day poster owns)
+  - telegram_cs_bot_token: present in /home/ubuntu/.hermes/profiles/cs-bot/.env
+
+next_action: Next TG broadcast window opens Aug 2 ~08:00 SGT (next-cycle draft ready). Rotation next = product 4 (Solopreneur Launchpad $5) for Aug 2-3 mission.
+
+verdict: PASS — shipped DEV.to article id 4278165 + durable HTML landing page + 10-platform marketing copy bundle + Jack DM (msg_id 531) + ready next-cycle TG draft. Sales today: $0. Telegram @jacklohai unreachable until Aug 2 ~08:00 SGT (48h cap from yesterday's broadcast). Bluesky reserved for dedicated poster. Bot maximized reachable channels; structural $0 deadlock remains until Jack manually posts the Reddit/X/LinkedIn copy from the bundle.
