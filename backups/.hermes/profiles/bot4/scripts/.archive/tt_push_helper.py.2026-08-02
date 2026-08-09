@@ -1,0 +1,162 @@
+#!/usr/bin/env python3
+"""Build a ready-to-push bundle for a given bounty number.
+
+Pipeline:
+1. Look up the issue (number → title, body, files, acceptance criteria)
+2. Pull the current state of the target kernel files from main
+3. Generate a branch + diff (delegated to a sub-task)
+4. Wrap the diff + PR description into a single message Jack can copy-paste
+
+Outputs:
+  - ~/projects/tt-metal/.pending/<number>-bundle.txt  (the message to send Jack)
+  - ~/projects/tt-metal/.pending/<number>-push.sh    (the push commands for Jack)
+  - ~/projects/tt-metal/.pending/<number>-<title>.patch  (the actual diff)
+
+Usage:
+    python3 tt_push_helper.py <issue_number>
+    python3 tt_push_helper.py 50465          # for the i0 $750 bounty
+"""
+
+import json, os, re, subprocess, sys, urllib.request
+from pathlib import Path
+
+REPO_DIR = Path("/home/ubuntu/projects/tt-metal")
+PENDING = REPO_DIR / ".pending"
+ISSUE_REPO = "tenstorrent/tt-metal"
+
+
+def fetch_issue(num):
+    url = f"https://api.github.com/repos/{ISSUE_REPO}/issues/{num}"
+    return json.loads(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "BizBot-push/1.0"}), timeout=10).read())
+
+
+def fmt_bounty_card(issue, patch_path, pr_desc_path, num):
+    """Return a single Telegram-ready message Jack can read + act on."""
+    title = issue["title"]
+    body = issue["body"] or ""
+    m = re.search(r'\$([\d,]+)', title)
+    amount = m.group(0) if m else "?"
+    files_match = re.findall(r'`([^`]+)`', body)
+
+    files_list = []
+    for line in body.splitlines():
+        if "tt_metal/" in line and ".h" in line:
+            files_list.append(line.strip())
+
+    files_section = "\n".join(f"  • `{f}`" for f in files_list[:8]) or "  (see issue body)"
+
+    pr_url = issue["html_url"].replace("/issues/", "/compare/main...jackloh84/") + f"_{num}_fix"
+
+    msg = f"""🎯 *Tenstorrent bounty bundle — #{num}*
+
+💰 *{amount}* — {title}
+
+📂 *Files to change (per issue):*
+{files_section}
+
+✅ *Ready-to-push assets on VPS:*
+  • Patch: `~/projects/tt-metal/.pending/{patch_path.name}`
+  • PR description: `~/projects/tt-metal/.pending/{pr_desc_path.name}`
+  • Push helper script: `~/projects/tt-metal/.pending/{num}-push.sh`
+
+🚀 *Your 5-step claim + push (15 min):*
+
+1. **Claim from your `jackloh84` account** — open {issue['html_url']}, post comment:
+```
+I'd like to be assigned to this. I have read and agree to the [Bounty Program Terms](https://docs.tenstorrent.com/bounty_terms.html).
+```
+
+2. **Wait for assignment** (1-3 days, maintainer responds on issue).
+
+3. **Pull the patch from VPS to your laptop:**
+```bash
+scp ubuntu@vps:/home/ubuntu/projects/tt-metal/.pending/{num}-*.patch .
+```
+
+4. **Apply + commit + push from your laptop:**
+```bash
+cd ~/code/tt-metal
+git checkout -b jackloh84/{num}_fix
+git apply {num}-*.patch
+git add .
+git commit -m "i0: two-region fix matching i1 (#43246) — handover at |x|=7"
+git push origin jackloh84/{num}_fix
+```
+
+5. **Open the PR** at:
+{pr_url}
+Title:
+```
+acc(sfpu): i0 — asymptotic for |x|>7, accurate exp, BF16 sub-1 ULP
+```
+Body: paste from `~/projects/tt-metal/.pending/{pr_desc_path.name}` on VPS.
+
+---
+
+🤖 AI assistance used offline per CONTRIBUTING.md. Manual review + post by Jack Loh (@jackloh84)."""
+
+    return msg
+
+
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: python3 tt_push_helper.py <issue_number>")
+        sys.exit(1)
+    num = int(sys.argv[1])
+
+    issue = fetch_issue(num)
+    PENDING.mkdir(exist_ok=True)
+
+    # Locate patch + PR description (created earlier or by sub-task)
+    candidates_patch = list(PENDING.glob(f"{num}-*.patch"))
+    candidates_pr = list(PENDING.glob(f"{num}-PR-*.md"))
+    if not candidates_patch:
+        print(f"ERROR: no patch found for #{num}. Run sub-task first to generate one.")
+        sys.exit(1)
+    if not candidates_pr:
+        print(f"ERROR: no PR description found for #{num}.")
+        sys.exit(1)
+
+    patch_path = candidates_patch[0]
+    pr_desc_path = candidates_pr[0]
+
+    msg = fmt_bounty_card(issue, patch_path, pr_desc_path, num)
+
+    out = PENDING / f"{num}-bundle.txt"
+    out.write_text(msg)
+    print(f"Wrote {out}")
+
+    # Also generate the push.sh
+    push_sh = PENDING / f"{num}-push.sh"
+    push_sh.write_text(f"""#!/bin/bash
+# Push helper for Tenstorrent bounty #{num}
+# Run this on Jack's laptop AFTER claiming on GitHub
+set -e
+
+cd ~/code/tt-metal  # adjust to wherever Jack has the repo
+git checkout main
+git pull --rebase
+git checkout -b jackloh84/{num}_fix
+git apply ~/Downloads/{patch_path.name}
+git add .
+git commit -m "$(cat <<'EOF'
+i0: two-region fix matching i1 (#43246) — handover at |x|=7
+
+🤖 AI assistance used offline per CONTRIBUTING.md.
+Manual review + post by Jack Loh (@jackloh84).
+EOF
+)"
+
+git push -u origin jackloh84/{num}_fix
+echo "✅ Pushed. Now open PR at:"
+echo "  {issue['html_url'].replace('/issues/', '/compare/main...jackloh84/')}_{num}_fix"
+""")
+    push_sh.chmod(0o755)
+    print(f"Wrote {push_sh}")
+
+    print("\n=== MESSAGE TO COPY-PASTE TO JACK ===\n")
+    print(msg)
+
+
+if __name__ == "__main__":
+    main()
