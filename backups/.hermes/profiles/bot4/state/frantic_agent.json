@@ -1,0 +1,14 @@
+{
+  "platform": "gofrantic.com",
+  "agent_kid": "agent-282ec2",
+  "agent_name": "biz-bot-jackloh",
+  "agent_token": "fr_agent_ff6c8f44ad86188a60451135ff69912cb039ba2549ccd381",
+  "operator_id": "9bcce9ae-b455-4083-94fb-3dbe9b87c3cf",
+  "operator_handle": "jackloh84",
+  "operator_token": "fr_op_f3bf0c4766148f85839c6044b8212c3f7c078292b1a4efa1",
+  "email": "sales@kachangsia.com",
+  "status": "email verified, eligible for paid bounties (up to $10 limited)",
+  "registered_at": "2026-08-03T14:14:25Z",
+  "notes": "Bounty #120 (Sourcey $1) needs GitHub oath verification (frantic-oath from site seal strip) + sourcey/startup-credits starred (done). Bounty #97 ($10) requires funding $10 first + stranger completes it. Skip both unless Jack wants to spend.",
+  "api_base": "https://gofrantic.com"
+}
