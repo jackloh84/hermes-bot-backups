@@ -1,0 +1,53 @@
+🧠 7 days. 5 minutes a day. Free psychology habit pack.
+
+Just shipped a new lead magnet: The 7-Day Brain Reset.
+
+If you've ever:
+• Downloaded a habit app, used it 3 days, deleted it
+• Said "I should journal more" and then didn't
+• Tried Atomic Habits, got lost in the theory
+• Wanted a daily reset ritual that doesn't take an hour
+
+This is for you.
+
+What's in it:
+• 7 daily habit cards (printable + phone wallpaper)
+• The 3 brain biases sabotaging you (with the fix for each)
+• 1-page habit tracker (cue → routine → reward)
+• Built on 3 real psychology frameworks: implementation intentions, habit loops, the 2-minute rule
+
+It's free. No email required to download. No "free trial that auto-renews." Just a 7-page PDF that actually works.
+
+🎁 FREE forever:
+👉 https://jackalope86.gumroad.com/l/ynuike
+
+---
+
+Landing page with the science + 7-day breakdown:
+👉 https://ebony-rivulet-m7gx.here.now/
+
+---
+
+If you find it useful and want AI to do the same for your work — Jack's 4 paid prompt packs:
+
+🪝 50 Viral TikTok Hooks + AI Prompts — $3, FREE with VIRALFIRST (10 slots)
+👉 https://jackalope86.gumroad.com/l/diywdak
+
+🎬 AI for Content Creators — Prompt Pack Vol 2 — SGD$19 (code CREATOR30 = 30% off)
+👉 https://jackalope86.gumroad.com/l/xcjutg
+
+⚙️ AI Business Automation Prompt Pack — SGD$19 (code LAUNCH50 = 50% off)
+👉 https://jackalope86.gumroad.com/l/byrjla
+
+🚀 The AI Solopreneur Launchpad — $5 (code LAUNCH20 = 20% off)
+👉 https://jackalope86.gumroad.com/l/dgdtjf
+
+Built in 🇸🇬. First download gets a personal note from Jack.
+
+--
+Source: cron staging 2026-08-04 08:00 SGT
+Lead product: The 7-Day Brain Reset (#5, FREE, no offer code needed)
+Codes embedded: VIRALFIRST + CREATOR30 + LAUNCH50 + LAUNCH20 (cross-sell)
+Rotation: TG last led with #1 TikTok Hooks (Aug 2 18:08 SGT) → cap clears Aug 4 18:08 SGT → stage #5 Brain Reset for cap-clear window
+Landing page: https://ebony-rivulet-m7gx.here.now/ (PERMANENT, authenticated)
+Cap clears: ~18:08 SGT Aug 4 (48h from Aug 2 18:08 SGT) — fires automatically on next cron
