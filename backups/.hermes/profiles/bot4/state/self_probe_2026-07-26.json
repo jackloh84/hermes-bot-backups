@@ -30,7 +30,7 @@
         "action": "polymarket-list"
       },
       "ok": true,
-      "resp_size": 2320
+      "resp_size": 2319
     },
     {
       "probe": {
@@ -62,7 +62,7 @@
         "msg": "minia2a-self-probe"
       },
       "ok": true,
-      "resp_size": 128
+      "resp_size": 129
     }
   ],
   "ok_count": 8,
