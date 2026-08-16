@@ -1,0 +1,202 @@
+[
+  {
+    "name": "AutoGen",
+    "github_url": "https://github.com/microsoft/autogen",
+    "stars_approx": 60215,
+    "language": "Python",
+    "description": "Microsoft's programming framework for agentic AI. Enables building multi-agent systems with conversable, customizable agents that collaborate via structured conversations.",
+    "multi_agent": true
+  },
+  {
+    "name": "LangChain",
+    "github_url": "https://github.com/langchain-ai/langchain",
+    "stars_approx": 143402,
+    "language": "Python",
+    "description": "The agent engineering platform. Composable framework for building LLM-powered applications, agents, and complex reasoning chains with tools and memory.",
+    "multi_agent": true
+  },
+  {
+    "name": "LangGraph",
+    "github_url": "https://github.com/langchain-ai/langgraph",
+    "stars_approx": 38840,
+    "language": "Python",
+    "description": "Build resilient, stateful agents as graphs. Provides durable execution, human-in-the-loop, and long-running workflows for production agent systems.",
+    "multi_agent": true
+  },
+  {
+    "name": "CrewAI",
+    "github_url": "https://github.com/crewAIInc/crewAI",
+    "stars_approx": 56599,
+    "language": "Python",
+    "description": "Framework for orchestrating role-playing, autonomous AI agents. Enables crews of agents with defined roles, goals, and tools to collaborate on complex tasks.",
+    "multi_agent": true
+  },
+  {
+    "name": "MetaGPT",
+    "github_url": "https://github.com/FoundationAgents/MetaGPT",
+    "stars_approx": 69656,
+    "language": "Python",
+    "description": "The Multi-Agent Framework that simulates a full software company. Assigns roles (PM, architect, engineer) to agents that collaborate on code generation pipelines.",
+    "multi_agent": true
+  },
+  {
+    "name": "CAMEL",
+    "github_url": "https://github.com/camel-ai/camel",
+    "stars_approx": 17538,
+    "language": "Python",
+    "description": "The first and best multi-agent framework. Finding the Scaling Laws of Agents. Pioneered role-playing autonomous agents with inception prompting.",
+    "multi_agent": true
+  },
+  {
+    "name": "OpenAI Agents SDK",
+    "github_url": "https://github.com/openai/openai-agents-python",
+    "stars_approx": 28378,
+    "language": "Python",
+    "description": "A lightweight, powerful framework for multi-agent workflows from OpenAI. Provides agents, handoffs, guardrails, and tracing for production agent systems.",
+    "multi_agent": true
+  },
+  {
+    "name": "Pydantic AI",
+    "github_url": "https://github.com/pydantic/pydantic-ai",
+    "stars_approx": 19048,
+    "language": "Python",
+    "description": "AI Agent Framework, the Pydantic way. Type-safe agents with FastAPI-style ergonomics, validation, and dependency injection for production LLM apps.",
+    "multi_agent": true
+  },
+  {
+    "name": "Mastra",
+    "github_url": "https://github.com/mastra-ai/mastra",
+    "stars_approx": 26894,
+    "language": "TypeScript",
+    "description": "The modern TypeScript framework for AI-powered applications and agents. Type-safe workflows, tool integration, and observability for JS/TS agent stacks.",
+    "multi_agent": true
+  },
+  {
+    "name": "ElizaOS",
+    "github_url": "https://github.com/elizaOS/eliza",
+    "stars_approx": 18893,
+    "language": "TypeScript",
+    "description": "Open source agentic operating system. Multi-agent platform for autonomous AI characters across social platforms, Discord, and web with persistent memory.",
+    "multi_agent": true
+  },
+  {
+    "name": "Haystack",
+    "github_url": "https://github.com/deepset-ai/haystack",
+    "stars_approx": 26107,
+    "language": "Python",
+    "description": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applications including agents, RAG pipelines, and multi-modal workflows.",
+    "multi_agent": true
+  },
+  {
+    "name": "SuperAGI",
+    "github_url": "https://github.com/TransformerOptimus/SuperAGI",
+    "stars_approx": 17652,
+    "language": "Python",
+    "description": "A dev-first open source autonomous AI agent framework. Enables building, managing, and running autonomous agents with toolkits, memory, and GUI.",
+    "multi_agent": true
+  },
+  {
+    "name": "Agent Zero",
+    "github_url": "https://github.com/agent0ai/agent-zero",
+    "stars_approx": 18728,
+    "language": "Python",
+    "description": "Agent Zero AI framework. General-purpose personal assistant with hierarchical multi-agent architecture, computer use, and persistent learning capabilities.",
+    "multi_agent": true
+  },
+  {
+    "name": "nanobot",
+    "github_url": "https://github.com/HKUDS/nanobot",
+    "stars_approx": 46604,
+    "language": "Python",
+    "description": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python. Minimal footprint agent runtime for local and production deployments.",
+    "multi_agent": false
+  },
+  {
+    "name": "Smolagents",
+    "github_url": "https://github.com/huggingface/smolagents",
+    "stars_approx": 11500,
+    "language": "Python",
+    "description": "Hugging Face's minimal agent library. Code-writing agents that perform tasks by writing Python, with safe execution and tool integration.",
+    "multi_agent": true
+  },
+  {
+    "name": "AutoGPT",
+    "github_url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "stars_approx": 176000,
+    "language": "Python",
+    "description": "An autonomous AI agent platform that chains LLM calls to accomplish goals. One of the first popular fully autonomous agent frameworks with a marketplace.",
+    "multi_agent": true
+  },
+  {
+    "name": "Semantic Kernel",
+    "github_url": "https://github.com/microsoft/semantic-kernel",
+    "stars_approx": 25500,
+    "language": "C#",
+    "description": "Microsoft's SDK for integrating AI into .NET, Python, and Java applications. Provides agents, planners, and orchestration for enterprise AI workflows.",
+    "multi_agent": true
+  },
+  {
+    "name": "Agno",
+    "github_url": "https://github.com/agno-agi/agno",
+    "stars_approx": 13200,
+    "language": "Python",
+    "description": "Full-stack agent framework with built-in memory, knowledge, session management, and multi-modal support. Designed for production agent deployment.",
+    "multi_agent": true
+  },
+  {
+    "name": "Letta",
+    "github_url": "https://github.com/letta-ai/letta",
+    "stars_approx": 12800,
+    "language": "Python",
+    "description": "Open-source framework for stateful agents with advanced memory architectures. Brings scalable memory and context management to long-running agents.",
+    "multi_agent": true
+  },
+  {
+    "name": "Browser-Use",
+    "github_url": "https://github.com/browser-use/browser-use",
+    "stars_approx": 18900,
+    "language": "Python",
+    "description": "Make websites accessible to AI agents. Browser automation framework that lets LLMs interact with web pages via natural language commands.",
+    "multi_agent": false
+  },
+  {
+    "name": "Phidata",
+    "github_url": "https://github.com/phidatahq/phidata",
+    "stars_approx": 13200,
+    "language": "Python",
+    "description": "Build AI agents with memory, knowledge, and tools. Add specialized agents to your application with a UI and reasoning capabilities.",
+    "multi_agent": true
+  },
+  {
+    "name": "Pipecat",
+    "github_url": "https://github.com/pipecat-ai/pipecat",
+    "stars_approx": 13909,
+    "language": "Python",
+    "description": "Open source framework for voice agents, multimodal apps, and realtime AI. Pipeline architecture for low-latency conversational agent applications.",
+    "multi_agent": false
+  },
+  {
+    "name": "Strands Agents",
+    "github_url": "https://github.com/strands-agents/sdk-python",
+    "stars_approx": 4500,
+    "language": "Python",
+    "description": "AWS-built model-driven agent SDK. Build agents using a simple model-driven approach with tools, system prompts, and structured outputs.",
+    "multi_agent": true
+  },
+  {
+    "name": "Atomic Agents",
+    "github_url": "https://github.com/BrainBlend-AI/atomic-agents",
+    "stars_approx": 3800,
+    "language": "Python",
+    "description": "Framework for building modular, scalable agentic systems using atomic, composable components. Based on the instructor library for structured outputs.",
+    "multi_agent": true
+  },
+  {
+    "name": "BabyAGI",
+    "github_url": "https://github.com/yoheinakajima/babyagi",
+    "stars_approx": 21000,
+    "language": "Python",
+    "description": "An isolated, SQLite-powered task management system for autonomous AI agents. Pioneered the task-driven autonomous agent loop with prioritized task creation.",
+    "multi_agent": false
+  }
+]
