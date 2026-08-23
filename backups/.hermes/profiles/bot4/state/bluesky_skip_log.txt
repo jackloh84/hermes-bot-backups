@@ -1,1 +1,1 @@
-2026-08-02 | SKIP (rolled 33, threshold 85%)
+2026-08-23 | SKIP (rolled 15, threshold 85%)
