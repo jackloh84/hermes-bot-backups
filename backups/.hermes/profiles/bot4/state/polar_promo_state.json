@@ -1,0 +1,70 @@
+{
+  "last_post_rkey": "3mtgia7mthd2j",
+  "last_post_uri": "at://did:plc:2wnynonwht4je3fzxctixpmx/app.bsky.feed.post/3mtgia7mth4d2j",
+  "last_post_url": "https://bsky.app/profile/jackloh84.bsky.social/post/3mtgia7mthd2j",
+  "checkout_url": "https://buy.polar.sh/724cfe28-5384-4c52-bdf3-81c83833dc6a",
+  "polar_profile": "https://polar.sh/kachangsia",
+  "product": "x402 Endpoint Starter Pack",
+  "product_price_usd": 50,
+  "product_price_sgd": 68,
+  "posted_at": "2026-08-19T10:12:00Z",
+  "verified_public": true,
+  "campaign": "polar_x402_promo_bluesky_v1",
+  "last_batch_at": "2026-08-23T01:01:00Z",
+  "last_batch_count": 5,
+  "last_batch_rkeys": [
+    "3mtplswouid2p",
+    "3mtplswulp62t",
+    "3mtplsx2aq725",
+    "3mtplsx7wf32p",
+    "3mtplsxfkeu25"
+  ],
+  "lifetime_polar_promo_posts": 7,
+  "batch_results": [
+    {
+      "label": "build-vs-buy angle",
+      "uri": "at://did:plc:2wnynonwht4je3fzxctixpmx/app.bsky.feed.post/3mtplswouid2p",
+      "cid": "bafyreiewklla7fu2ujbqqzqxq5ixc65zkgvxrwu3n32xtmvg7fsy46hwhu",
+      "public": false,
+      "handle": "jackloh84.bsky.social",
+      "text": "Built 4 x402 endpoints by hand before shipping this product.",
+      "indexed": "2026-08-23T01:03:58.973Z"
+    },
+    {
+      "label": "latency angle",
+      "uri": "at://did:plc:2wnynonwht4je3fzxctixpmx/app.bsky.feed.post/3mtplswulp62t",
+      "cid": "bafyreicqpnegtgcqnnjvau2ihjx44kt47soecprk6uch5nxbiq4v6blsbe",
+      "public": false,
+      "handle": "jackloh84.bsky.social",
+      "text": "Most x402 demos you find online take 4-7 days to wire up. Mi",
+      "indexed": "2026-08-23T01:03:59.007Z"
+    },
+    {
+      "label": "ship-fast testimonial-style",
+      "uri": "at://did:plc:2wnynonwht4je3fzxctixpmx/app.bsky.feed.post/3mtplsx2aq725",
+      "cid": "bafyreic7mi5acqrcxoj7376uaz2ehglzz5gxozauy4qttxgbikbthmlcnq",
+      "public": false,
+      "handle": "jackloh84.bsky.social",
+      "text": "First 3 sales to my x402 endpoint pack got live endpoints sa",
+      "indexed": "2026-08-23T01:03:59.172Z"
+    },
+    {
+      "label": "agent-economy angle",
+      "uri": "at://did:plc:2wnynonwht4je3fzxctixpmx/app.bsky.feed.post/3mtplsx7wf32p",
+      "cid": "bafyreigk466uatog5njcspjz6cmlq2kqitp3riu6pgbv4ozfmsupcpt3xq",
+      "public": false,
+      "handle": "jackloh84.bsky.social",
+      "text": "AI agents need to pay each other. The cleanest way in 2026: ",
+      "indexed": "2026-08-23T01:03:59.265Z"
+    },
+    {
+      "label": "concrete-spec angle",
+      "uri": "at://did:plc:2wnynonwht4je3fzxctixpmx/app.bsky.feed.post/3mtplsxfkeu25",
+      "cid": "bafyreig6dufwg7uwh4vz76t3yjzo4q5gx3zowkgur2xtalcyvkowjtklei",
+      "public": false,
+      "handle": "jackloh84.bsky.social",
+      "text": "What's inside the $50 x402 Starter Pack: 1 FastAPI or Worker",
+      "indexed": "2026-08-23T01:03:59.476Z"
+    }
+  ]
+}
