@@ -73,7 +73,7 @@ def make_letter(g, price):
 
 def main():
     d = json.load(open("/home/ubuntu/.hermes/profiles/bot4/secrets/ugig.json"))
-    hdr = {"X-API-Key": d["api_key"], "Content-Type": "application/json", "User-Agent": "Mozilla/5.0"}
+    hdr = {"Authorization": f"Bearer {d['api_key']}", "Content-Type": "application/json", "User-Agent": "Mozilla/5.0"}
     state = json.load(open(STATE))
     today = time.strftime("%Y-%m-%d")
     count = state.get("daily_count", {}).get(today, 0)
@@ -81,7 +81,7 @@ def main():
 
     # fetch open gigs
     try:
-        gigs_data = get_json("https://ugig.net/api/gigs", hdr)
+        gigs_data = get_json("https://ugig.net/api/gigs?limit=100", hdr)
         gigs = gigs_data.get("gigs", gigs_data.get("data", gigs_data.get("items", [])))
         if isinstance(gigs_data, dict) and isinstance(gigs_data.get("data"), list):
             gigs = gigs_data["data"]
