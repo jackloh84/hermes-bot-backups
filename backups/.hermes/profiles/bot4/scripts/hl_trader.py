@@ -10,7 +10,7 @@ Rules (Jack Aug 9):
   - TP = 1.5 x ATR(14); SL = 1.0 x ATR(14)
   - Daily -3% stop; max 5 trades/day; WR-stop
   - DRY RUN by default (prints what it would do, sends NO orders).
-    Set DRY_RUN = False (or run --live) ONLY after Jack's explicit OK.
+    Set DRY_RUN = True (or run --live) ONLY after Jack's explicit OK.
 
 Usage:
   python3 hl_trader.py            # dry-run monitor (default)
@@ -52,7 +52,7 @@ DAILY_LOSS_STOP = 0.03
 LEVERAGE = 3
 NOTIONAL_MIN = 10.0
 HEARTBEAT_MIN = 30
-DRY_RUN = False                  # LIVE (Jack "go" Aug 9 2026) — real orders; --dry overrides for testing
+DRY_RUN = False                 # LIVE (Jack "go" Aug 9 2026) — real orders; --dry overrides for testing
 
 
 def load_env():
