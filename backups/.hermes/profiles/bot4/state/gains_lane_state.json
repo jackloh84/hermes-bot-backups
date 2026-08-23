@@ -7,27 +7,9 @@
       "direction": "long",
       "collateral": 1.1428399999999999,
       "lev": 250,
-      "sl": 4225.755053,
-      "ts": 1786032086.4713225,
-      "tx": "3dffafeb2c9b253c57b0f96f7b2a65dddd83f1b41e676739625d85f67da2ff43"
-    },
-    {
-      "pair": "XAUUSD",
-      "direction": "long",
-      "collateral": 1.1428399999999999,
-      "lev": 250,
-      "sl": 4240.82136,
-      "ts": 1786046434.4116979,
-      "tx": "ba4e2b334edb066661783fdace1149fc9b24bcef6058f9296aa06ef12ead8da6"
-    },
-    {
-      "pair": "XAUUSD",
-      "direction": "long",
-      "collateral": 1.1428399999999999,
-      "lev": 250,
-      "sl": 4239.582842,
-      "ts": 1786060865.3582368,
-      "tx": "d83f2cdd44e75c4a4188f2a85197eef378833dbab83b30486e7a1ed19dc11568"
+      "sl": 4245.131223,
+      "ts": 1785998336.3807518,
+      "tx": "89f3a4be69bb73dac59e1bf7ffd5b2748fb94972a987c428fab6510525dd1027"
     }
   ]
 }
