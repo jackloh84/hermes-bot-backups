@@ -8,7 +8,7 @@
         "address": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045"
       },
       "ok": true,
-      "resp_size": 149
+      "resp_size": 148
     },
     {
       "probe": {
@@ -30,7 +30,7 @@
         "action": "polymarket-list"
       },
       "ok": true,
-      "resp_size": 2313
+      "resp_size": 2312
     },
     {
       "probe": {
@@ -62,7 +62,7 @@
         "msg": "minia2a-self-probe"
       },
       "ok": true,
-      "resp_size": 129
+      "resp_size": 128
     }
   ],
   "ok_count": 8,
