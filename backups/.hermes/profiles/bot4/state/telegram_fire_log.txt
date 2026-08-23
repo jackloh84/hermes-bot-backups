@@ -1,3 +1,8 @@
-2026-08-06T15:05:00+08:00 | SENT: msg_id=42
-2026-08-05T15:03:13+08:00 | SENT: msg_id=40
-2026-08-08T15:03:59+08:00 | SENT: msg_id=44 | lead=#1 TikTok Hooks
+[2026-08-23T18:01:30+08:00] FIRE: msg_id=55 to @jacklohai — intro post (channel relaunch)
+  text: "Welcome to Jack Loh — AI agent ops in Singapore 🇸🇬 ..." (VIRALFIRST offer codes + invite link)
+  prev: msg_id=53 (2026-08-23 16:02, biz-bot cron)
+  bot: Biz Bot @her_a04_bot id 8357609149
+  verified: ok:true
+[2026-08-23T18:01:30+08:00] CHANNEL STATUS: @jacklohai LIVE, 3 subscribers, bot is admin
+  drift-correction: Aug 20 brief said "dead (chat not found)" — VERIFIED LIVE today
+  invite_link: https://t.me/+f0YvwqN7I5ZhZWI9
