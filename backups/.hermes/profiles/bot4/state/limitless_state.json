@@ -67,13 +67,39 @@
       "ret_20": 0.010861224248863667,
       "atr5": 0.0020282238442822084,
       "lock_pct": 0.7
+    },
+    {
+      "ts": 1786838608.3718328,
+      "slug": "btc-up-or-down-15-min-1786838400",
+      "side": "up",
+      "token": "YES",
+      "amount": 1.0,
+      "order_id": "270592e5-1d5c-465c-81d0-e22f3deae5e1",
+      "strength": 0.09170719904246782,
+      "vol_ratio": 0.0,
+      "ret_20": 0.0,
+      "atr5": 0.0,
+      "lock_pct": 0.5
+    },
+    {
+      "ts": 1786928509.4327524,
+      "slug": "eth-up-or-down-5-min-1786928400",
+      "side": "down",
+      "token": "NO",
+      "amount": 1.0,
+      "order_id": "a2dc4e50-1d61-4d2f-8317-95200e43930d",
+      "strength": 0.6857292998782016,
+      "vol_ratio": 0.0,
+      "ret_20": 0.0,
+      "atr5": 0.0,
+      "lock_pct": 1.0
     }
   ],
   "total_pnl": 0.0,
-  "last_trade_ts": 1786240251.734933,
-  "day": "2026-08-09",
-  "day_start_bal": 48.058986,
-  "day_pnl": 0.0,
+  "last_trade_ts": 1786928509.4327524,
+  "day": "2026-08-17",
+  "day_start_bal": 25.869936,
+  "day_pnl": -0.9999979999999979,
   "day_trades": 1,
   "loss_streak": 0
 }
