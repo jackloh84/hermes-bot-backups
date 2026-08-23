@@ -1,1 +1,4 @@
-2
+2026-08-23 bot4: ESP8266 Event Lighting Control — DRAFT product created.
+product_id=KrXTRsg5xtiN3BxTcu9MEg== | short_url=https://jackalope86.gumroad.com/l/qcmcn
+price=$19 USD (1900c) | published=false | category=software-development/hardware
+zip attached (1.61MB) | cover main_cover_id=9cbad92ac42e2ca2f1077424eac03b78
