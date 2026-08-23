@@ -50,7 +50,10 @@ def probe():
     line = f"[{ts}] Probed {ok}/{len(PROBES)} endpoints OK ({gate} gated by x402 paywall)\n"
     with open(LOG, "a") as f:
         f.write(line)
-    print(line.strip())
+    # NOTE (Aug 23 2026): do NOT also print() to stdout — the skill's canonical
+    # cron invocation redirects stdout into the same LOG file (`>> log 2>&1`),
+    # which double-logged every run (two identical lines per run) and inflated
+    # the Loop-N counter. The log file is the record; exit code is the signal.
 
 if __name__ == "__main__":
     probe()
