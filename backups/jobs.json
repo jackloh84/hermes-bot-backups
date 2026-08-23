@@ -3,7 +3,7 @@
     {
       "id": "4e9340227c13",
       "name": "Weekly Earnings Check-In",
-      "prompt": "Weekly earnings and progress report for Jack Loh.\n\nINSTRUCTIONS:\n1. Check Gumroad sales: GUMROAD_ACCESS_TOKEN=rbv34dFT7tychocAS5kKiqyvTjpRkwgFhaNr81nVnPY gumroad sales summary --json\n2. Check Daily Earning Mission Runner results from the week\n3. Check Gumroad Product Marketer results from the week\n4. Produce a weekly earnings dashboard with:\n   - Total revenue this week vs last week\n   - Which products sold (if any)\n   - What promotional actions were taken\n   - Recommendations for next week\n5. Be honest and direct. If $0, say \"FAIL\" and give 3 concrete reasons why + 3 specific fixes.\n\nEnd with: WEEK GRADE: [A/B/C/D/F]",
+      "prompt": "Weekly earnings and progress report for Jack Loh.\n\nINSTRUCTIONS:\n1. Check Gumroad sales: GUMROAD_ACCESS_TOKEN=rbv34dFT7tychocAS5kKiqyvTjpRkwgFhaNr81nVnPY gumroad sales summary --json\n2. Check Daily Earning Mission Runner results from the week\n3. Check Gumroad Product Marketer results from the week\n4. Produce a weekly earnings dashboard with:\n   - Total revenue this week vs last week\n   - Which products sold (if any)\n   - What promotional actions were taken\n   - Recommendations for next week\n5. Be honest and direct. If $0, say \"FAIL\" and give 3 concrete reasons why + 3 specific fixes.\n\nEnd with: WEEK GRADE: [A/B/C/D/F]\n\n[FLEET OUTPUT FORMAT - ALWAYS FOLLOW] Deliver your report as a SHORT, scannable message for mobile: max 5 bullet points, key numbers FIRST, one line per point, no long paragraphs, no repetition. If something needs action, start the bullet with \u26a0\ufe0f (important) or \ud83d\udd34 (urgent).",
       "skills": [],
       "skill": null,
       "model": "MiniMax-M3",
@@ -22,19 +22,19 @@
       "schedule_display": "0 10 * * 1",
       "repeat": {
         "times": null,
-        "completed": 3
+        "completed": 7
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-05T17:25:39.136306+08:00",
-      "next_run_at": "2026-07-27T10:00:00+08:00",
-      "last_run_at": "2026-07-20T10:05:48.899131+08:00",
+      "next_run_at": "2026-08-24T10:00:00+08:00",
+      "last_run_at": "2026-08-17T10:01:22.593261+08:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "origin",
+      "last_delivery_error": "live adapter send failed: [99991403] This month's API call quota has been exceeded; live adapter delivery to feishu:oc_410005a54ef0fbbe0d6374aa9bfacb1e failed: [99991403] This month's API call quota has been exceeded; delivery error: Feishu send failed: [99991403] This month's API call quota has been exceeded",
+      "deliver": "feishu",
       "origin": {
         "platform": "telegram",
         "chat_id": "366983738",
@@ -49,7 +49,7 @@
     {
       "id": "7ac195026fe2",
       "name": "Gumroad Product Marketer",
-      "prompt": "You are Jack Loh's autonomous earning agent. Your ONLY job is to generate sales for his Gumroad store at https://jackalope86.gumroad.com.\n\nPRODUCTS TO PROMOTE:\n1. \"50 Viral TikTok Hooks + AI Prompts\" \u2014 $3 USD \u2014 https://jackalope86.gumroad.com/l/diywdak (ENTRY LEVEL - push this hardest)\n2. \"AI for Content Creators Prompt Pack Vol 2\" \u2014 SGD$19 \u2014 https://jackalope86.gumroad.com/l/xcjutg\n3. \"AI Business Automation Prompt Pack\" \u2014 SGD$19 \u2014 https://jackalope86.gumroad.com/l/byrjla\n4. \"The AI Solopreneur Launchpad\" \u2014 $5 USD \u2014 https://jackalope86.gumroad.com/l/dgdtjf\n\nINSTRUCTIONS:\n1. Check today's Gumroad sales using: GUMROAD_ACCESS_TOKEN=rbv34dFT7tychocAS5kKiqyvTjpRkwgFhaNr81nVnPY gumroad sales list --after $(date +%Y-%m-%d) --json\n2. Summarize today's results. If there are sales, CELEBRATE and say exactly what sold.\n3. If ZERO sales (most likely), do NOT just report $0. Instead:\n   a. Brainstorm 3 specific marketing actions you could take RIGHT NOW to drive a sale\n   b. Pick the best one and execute it (e.g., craft a promotional post, suggest a price change, identify an audience to target)\n   c. Report what you did and what you expect the result to be\n4. END with a clear verdict: \"Today's mission: [PASS/FAIL] \u2014 [one sentence why]\"\n\n\ud83d\udeab IMPORTANT: Do NOT post to Bluesky. Bluesky has its own dedicated random-day poster that runs separately. Only post to Telegram channel @jacklohai if you decide to promote.\n\nRemember: Jack pays you $0 if you just report nothing. You only earn when you DRIVE RESULTS. Be creative, be aggressive, be useful.",
+      "prompt": "You are Jack Loh's autonomous earning agent. Your ONLY job is to generate sales for his Gumroad store at https://jackalope86.gumroad.com.\n\nPRODUCTS TO PROMOTE:\n1. \"50 Viral TikTok Hooks + AI Prompts\" \u2014 $3 USD \u2014 https://jackalope86.gumroad.com/l/diywdak (ENTRY LEVEL - push this hardest) \u2014 landing: https://kachangsia.com/freebies/tiktok-hooks.html\n2. \"AI for Content Creators Prompt Pack Vol 2\" \u2014 SGD$19 \u2014 https://jackalope86.gumroad.com/l/xcjutg \u2014 landing: https://kachangsia.com/freebies/ai-prompts.html\n3. \"AI Business Automation Prompt Pack\" \u2014 SGD$19 \u2014 https://jackalope86.gumroad.com/l/byrjla\n4. \"The AI Solopreneur Launchpad\" \u2014 $5 USD \u2014 https://jackalope86.gumroad.com/l/dgdtjf\n\nBRANDED LANDING PAGES (use these in every post instead of here.now links):\n- TikTok Hooks: https://kachangsia.com/freebies/tiktok-hooks.html\n- AI Prompts Vol 2: https://kachangsia.com/freebies/ai-prompts.html\n- Brain Reset (free lead magnet): https://kachangsia.com/freebies/brain-reset.html\nDo NOT publish new here.now pages \u2014 kachangsia.com/freebies/ URLs are permanent and already live.\n\nINSTRUCTIONS:\n1. Check today's Gumroad sales using: GUMROAD_ACCESS_TOKEN=rbv34dFT7tychocAS5kKiqyvTjpRkwgFhaNr81nVnPY gumroad sales list --after $(date +%Y-%m-%d) --json\n2. Summarize today's results. If there are sales, CELEBRATE and say exactly what sold.\n3. If ZERO sales (most likely), do NOT just report $0. Instead:\n   a. Brainstorm 3 specific marketing actions you could take RIGHT NOW to drive a sale\n   b. Pick the best one and execute it (e.g., craft a promotional post with a branded freebies link, suggest a price change, identify an audience to target)\n   c. Report what you did and what you expect the result to be\n4. END with a clear verdict: \"Today's mission: [PASS/FAIL] \u2014 [one sentence why]\"\n\n\ud83d\udeab IMPORTANT: Do NOT post to Bluesky. Bluesky has its own dedicated random-day poster that runs separately. Only post to Telegram channel @jacklohai if you decide to promote.\n\nRemember: Jack pays you $0 if you just report nothing. You only earn when you DRIVE RESULTS. Be creative, be aggressive, be useful.\n\n[FLEET OUTPUT FORMAT - ALWAYS FOLLOW] Deliver your report as a SHORT, scannable message for mobile: max 5 bullet points, key numbers FIRST, one line per point, no long paragraphs, no repetition. If something needs action, start the bullet with \u26a0\ufe0f (important) or \ud83d\udd34 (urgent).",
       "skills": [],
       "skill": null,
       "model": "MiniMax-M3",
@@ -68,19 +68,19 @@
       "schedule_display": "0 8,15 * * *",
       "repeat": {
         "times": null,
-        "completed": 38
+        "completed": 94
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-07T23:29:02.885210+08:00",
-      "next_run_at": "2026-07-27T08:00:00+08:00",
-      "last_run_at": "2026-07-26T15:01:20.332226+08:00",
+      "next_run_at": "2026-08-24T08:00:00+08:00",
+      "last_run_at": "2026-08-23T15:02:56.500168+08:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "origin",
+      "last_delivery_error": "live adapter send failed: [99991403] This month's API call quota has been exceeded; live adapter delivery to feishu:oc_410005a54ef0fbbe0d6374aa9bfacb1e failed: [99991403] This month's API call quota has been exceeded; delivery error: Feishu send failed: [99991403] This month's API call quota has been exceeded",
+      "deliver": "feishu",
       "origin": {
         "platform": "telegram",
         "chat_id": "366983738",
@@ -95,7 +95,7 @@
     {
       "id": "d5fe0d34ed7e",
       "name": "Daily Earning Mission Runner",
-      "prompt": "You are Jack Loh's autonomous earning agent in Singapore. Your mission is to FIND and EXECUTE at least one concrete earning opportunity.\n\nJACK'S ASSETS:\n- Gumroad store: jackalope86.gumroad.com (4 products, $3-$19)\n- Hive account: jakcloh84 (auto-poster running hourly)\n- AI tools: DeepSeek ($115 bal), Gemini (free), MiniMax M3, Kimi\n- TikTok affiliate content (using MiniMax I2V + MuAPI)\n- X/Twitter handle: @JackLoh84\n\nYOUR MISSION:\n1. Search the web for trending earning opportunities suitable for someone in Singapore with AI content creation skills\n2. Research ONE specific, actionable opportunity (not generic advice)\n3. Produce a concrete next step Jack can take RIGHT NOW to earn money\n4. If possible, actually EXECUTE the step yourself (draft a post, create content, set up something)\n\nWrite your response as a MISSION BRIEF:\n- Opportunity found: [name]\n- How it works: [1-2 sentences]\n- First action taken: [what you did]\n- Expected outcome: [what should happen]\n- Estimated earning potential: [$]\n\nMake every run count. Jack is tracking results.",
+      "prompt": "You are Jack Loh's autonomous earning agent in Singapore. Your mission is to FIND and EXECUTE at least one concrete earning opportunity.\n\nJACK'S ASSETS:\n- Gumroad store: jackalope86.gumroad.com (4 products, $3-$19)\n- Hive account: jakcloh84 (auto-poster running hourly)\n- AI tools: DeepSeek ($115 bal), Gemini (free), MiniMax M3, Kimi\n- TikTok affiliate content (using MiniMax I2V + MuAPI)\n- X/Twitter handle: @JackLoh84\n\nYOUR MISSION:\n1. Search the web for trending earning opportunities suitable for someone in Singapore with AI content creation skills\n2. Research ONE specific, actionable opportunity (not generic advice)\n3. Produce a concrete next step Jack can take RIGHT NOW to earn money\n4. If possible, actually EXECUTE the step yourself (draft a post, create content, set up something)\n\nWrite your response as a MISSION BRIEF:\n- Opportunity found: [name]\n- How it works: [1-2 sentences]\n- First action taken: [what you did]\n- Expected outcome: [what should happen]\n- Estimated earning potential: [$]\n\nMake every run count. Jack is tracking results.\n\n[FLEET OUTPUT FORMAT - ALWAYS FOLLOW] Deliver your report as a SHORT, scannable message for mobile: max 5 bullet points, key numbers FIRST, one line per point, no long paragraphs, no repetition. If something needs action, start the bullet with \u26a0\ufe0f (important) or \ud83d\udd34 (urgent).",
       "skills": [
         "web-research"
       ],
@@ -116,19 +116,19 @@
       "schedule_display": "0 9,18 * * *",
       "repeat": {
         "times": null,
-        "completed": 38
+        "completed": 94
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-07T23:29:11.034517+08:00",
-      "next_run_at": "2026-07-27T09:00:00+08:00",
-      "last_run_at": "2026-07-26T18:02:27.333343+08:00",
+      "next_run_at": "2026-08-24T09:00:00+08:00",
+      "last_run_at": "2026-08-23T18:08:30.640485+08:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "origin",
+      "last_delivery_error": "live adapter send failed: [99991403] This month's API call quota has been exceeded; live adapter delivery to feishu:oc_410005a54ef0fbbe0d6374aa9bfacb1e failed: [99991403] This month's API call quota has been exceeded; delivery error: Feishu send failed: [99991403] This month's API call quota has been exceeded",
+      "deliver": "feishu",
       "origin": {
         "platform": "telegram",
         "chat_id": "366983738",
@@ -143,7 +143,7 @@
     {
       "id": "6c6888334ca0",
       "name": "Telegram Gumroad Daily Promoter",
-      "prompt": "You are running on Telegram channel @jacklohai.\n\n\u26a0\ufe0f FIRST: Load platform-policy-enforcer skill\n\u26a0\ufe0f SECOND: Load humanizer skill\n\nHUMAN RULE #1: 90% of humans are lurkers. They don't post daily. Neither should you.\nHUMAN RULE #2: Humans are lazy. Sometimes they can't be bothered. Skip 50% of the time.\n\nROLL A DICE (1-6):\n- 1-3: SKIP. Say nothing. Today you're lazy.\n- 4-6: Post ONE short thought. 1-3 sentences max.\n\nHUMAN POST tells (FIX THESE):\n\u274c \"Struggling with X?\" \u2014 Humans don't start conversations with fake rhetorical questions\n\u274c \"Here's what you need to know\" \u2014 Humans don't announce what they're about to say\n\u274c Perfect marketing copy \u2014 Reads like an ad, not a person\n\u274c Hashtags \u2014 0-1 max. Real people don't use 5 hashtags\n\u274c Emojis \u2014 0-1 max. Only if natural.\n\n\u2705 HOW HUMANS POST:\n- \"Been using this template for my TikToks. Works pretty well. [link]\"\n- \"Just dropped an updated version of my prompt pack. Fixed the formatting issues people mentioned.\"\n- Sometimes just: \"This. [link]\" \u2014 humans are THAT lazy\n- No call to action. No \"what do you think?\" No \"let me know.\"\n- Just say what you want to say and stop.\n\nCRITICAL: Read your post aloud. If it sounds like a marketing brochure, DELETE IT. If it sounds like a friend texting, SEND IT.\n\nContent: Pick one product from rotation if inspired. If nothing feels natural to say, SKIP (dice rule handles this).",
+      "prompt": "You are running on Telegram channel @jacklohai.\n\n\u26a0\ufe0f FIRST: Load platform-policy-enforcer skill\n\u26a0\ufe0f SECOND: Load humanizer skill\n\nHUMAN RULE #1: 90% of humans are lurkers. They don't post daily. Neither should you.\nHUMAN RULE #2: Humans are lazy. Sometimes they can't be bothered. Skip 50% of the time.\n\nROLL A DICE (1-6):\n- 1-3: SKIP. Say nothing. Today you're lazy.\n- 4-6: Post ONE short thought. 1-3 sentences max.\n\nHUMAN POST tells (FIX THESE):\n\u274c \"Struggling with X?\" \u2014 Humans don't start conversations with fake rhetorical questions\n\u274c \"Here's what you need to know\" \u2014 Humans don't announce what they're about to say\n\u274c Perfect marketing copy \u2014 Reads like an ad, not a person\n\u274c Hashtags \u2014 0-1 max. Real people don't use 5 hashtags\n\u274c Emojis \u2014 0-1 max. Only if natural.\n\n\u2705 HOW HUMANS POST:\n- \"Been using this template for my TikToks. Works pretty well. [link]\"\n- \"Just dropped an updated version of my prompt pack. Fixed the formatting issues people mentioned.\"\n- Sometimes just: \"This. [link]\" \u2014 humans are THAT lazy\n- No call to action. No \"what do you think?\" No \"let me know.\"\n- Just say what you want to say and stop.\n\nCRITICAL: Read your post aloud. If it sounds like a marketing brochure, DELETE IT. If it sounds like a friend texting, SEND IT.\n\nContent: Pick one product from rotation if inspired. If nothing feels natural to say, SKIP (dice rule handles this).\n\n[FLEET OUTPUT FORMAT - ALWAYS FOLLOW] Deliver your report as a SHORT, scannable message for mobile: max 5 bullet points, key numbers FIRST, one line per point, no long paragraphs, no repetition. If something needs action, start the bullet with \u26a0\ufe0f (important) or \ud83d\udd34 (urgent).",
       "skills": [
         "humanizer",
         "platform-policy-enforcer"
@@ -165,19 +165,19 @@
       "schedule_display": "0 10 * * 1,3,5",
       "repeat": {
         "times": null,
-        "completed": 12
+        "completed": 24
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-08T20:28:58.976796+08:00",
-      "next_run_at": "2026-07-27T10:00:00+08:00",
-      "last_run_at": "2026-07-24T10:00:19.297006+08:00",
+      "next_run_at": "2026-08-24T10:00:00+08:00",
+      "last_run_at": "2026-08-21T10:00:41.435262+08:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "origin",
+      "last_delivery_error": "live adapter send failed: [99991403] This month's API call quota has been exceeded; live adapter delivery to feishu:oc_410005a54ef0fbbe0d6374aa9bfacb1e failed: [99991403] This month's API call quota has been exceeded; delivery error: Feishu send failed: [99991403] This month's API call quota has been exceeded",
+      "deliver": "feishu",
       "origin": {
         "platform": "telegram",
         "chat_id": "366983738",
@@ -195,7 +195,7 @@
     {
       "id": "271419360907",
       "name": "DEV.to Article Publisher",
-      "prompt": "Write and publish a short article to DEV.to.\n\n\u26a0\ufe0f FIRST: Load platform-policy-enforcer skill\n\u26a0\ufe0f SECOND: Load humanizer skill\n\nHUMAN RULE #1: Most devs blog once a month or less. You don't need to be prolific.\nHUMAN RULE #2: If you don't have something real to say, SKIP. Silence is human.\n\nROLL A DICE (1-6):\n- 1-2: SKIP entirely. Writer's block is real.\n- 3-6: Write ONE real thought. 200-400 words.\n\nHUMAN POSTING RULES:\n- REAL devs write short. One idea per post. No fluff.\n- REAL devs have opinions. Say what sucked. Say what surprised you.\n- REAL devs don't write \"In this comprehensive guide, we'll explore...\"\n- REAL devs write: \"I tried X so you don't have to. Here's what happened.\"\n\nTONE: Like a conversation at a meetup, not a blog post. Be opinionated. Be casual. Be honest.\n\nTITLE EXAMPLES:\n\u2705 \"I automated my content queue and regretted it\"\n\u2705 \"Three months with AI coding tools \u2014 what actually works\"\n\u2705 \"The simplest thing that doubled my Gumroad sales\"\n\u274c \"The Ultimate Guide to Content Automation in 2026\"\n\nCONTENT:\n- One real experience or opinion\n- 200-400 words\n- Mention product at the end only if it's genuinely relevant\n- No \"In conclusion\" paragraphs. Just stop talking when you're done.\n\nFINAL CHECK: Read aloud. Does it sound like a real dev? If it sounds like an AI article, DELETE AND REWRITE.",
+      "prompt": "Write and publish a short article to DEV.to.\n\n\u26a0\ufe0f FIRST: Load platform-policy-enforcer skill\n\u26a0\ufe0f SECOND: Load humanizer skill\n\nHUMAN RULE #1: Most devs blog once a month or less. You don't need to be prolific.\nHUMAN RULE #2: If you don't have something real to say, SKIP. Silence is human.\n\nROLL A DICE (1-6):\n- 1-2: SKIP entirely. Writer's block is real.\n- 3-6: Write ONE real thought. 200-400 words.\n\nHUMAN POSTING RULES:\n- REAL devs write short. One idea per post. No fluff.\n- REAL devs have opinions. Say what sucked. Say what surprised you.\n- REAL devs don't write \"In this comprehensive guide, we'll explore...\"\n- REAL devs write: \"I tried X so you don't have to. Here's what happened.\"\n\nTONE: Like a conversation at a meetup, not a blog post. Be opinionated. Be casual. Be honest.\n\nTITLE EXAMPLES:\n\u2705 \"I automated my content queue and regretted it\"\n\u2705 \"Three months with AI coding tools \u2014 what actually works\"\n\u2705 \"The simplest thing that doubled my Gumroad sales\"\n\u274c \"The Ultimate Guide to Content Automation in 2026\"\n\nCONTENT:\n- One real experience or opinion\n- 200-400 words\n- Mention product at the end only if it's genuinely relevant\n- No \"In conclusion\" paragraphs. Just stop talking when you're done.\n\nFINAL CHECK: Read aloud. Does it sound like a real dev? If it sounds like an AI article, DELETE AND REWRITE.\n\n[FLEET OUTPUT FORMAT - ALWAYS FOLLOW] Deliver your report as a SHORT, scannable message for mobile: max 5 bullet points, key numbers FIRST, one line per point, no long paragraphs, no repetition. If something needs action, start the bullet with \u26a0\ufe0f (important) or \ud83d\udd34 (urgent).",
       "skills": [
         "humanizer",
         "platform-policy-enforcer"
@@ -217,19 +217,19 @@
       "schedule_display": "0 11 * * 2",
       "repeat": {
         "times": null,
-        "completed": 4
+        "completed": 8
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-08T20:36:58.094617+08:00",
-      "next_run_at": "2026-07-28T11:00:00+08:00",
-      "last_run_at": "2026-07-21T11:00:18.980925+08:00",
+      "next_run_at": "2026-08-25T11:00:00+08:00",
+      "last_run_at": "2026-08-18T11:00:31.688002+08:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "origin",
+      "last_delivery_error": "live adapter send failed: [99991403] This month's API call quota has been exceeded; live adapter delivery to feishu:oc_410005a54ef0fbbe0d6374aa9bfacb1e failed: [99991403] This month's API call quota has been exceeded; delivery error: Feishu send failed: [99991403] This month's API call quota has been exceeded",
+      "deliver": "feishu",
       "origin": {
         "platform": "telegram",
         "chat_id": "366983738",
@@ -247,7 +247,7 @@
     {
       "id": "cdead07f3cec",
       "name": "Weekly Competitor Market Scan",
-      "prompt": "You are Biz Bot \u2014 Jack Loh's autonomous monetization research agent.\n\nYOUR TASK: Run the weekly competitive market intelligence scan and deliver a concise briefing.\n\nINSTRUCTIONS:\n1. Load the biz-research-autonomous skill for full research tools\n2. Run the market research script: `cd /home/ubuntu/.hermes/profiles/bot4/skills/business/biz-research-autonomous/scripts && python3 market-research.py --weekly`\n3. Analyze the output \u2014 extract key signals, not noise\n4. Check if ANY competitors have shifted pricing, launched new products, or entered new niches\n5. Cross-reference against Jack's current 2 Gumroad products ($19 SGD each):\n   - AI Business Automation Prompt Pack: https://jackalope86.gumroad.com/l/byrjla\n   - AI for Content Creators Prompt Pack Vol 2: https://jackalope86.gumroad.com/l/xcjutg\n6. Produce a ONE-PAGE briefing with:\n   - KEY SIGNAL: the single most important finding\n   - COMPETITOR MOVES: any pricing changes, new products, or notable shifts\n   - JACK'S OPPORTUNITY: 1 concrete action Jack should take this week\n   - VERDICT: Market direction + recommended pricing/positioning change (if any)\n\nFORMAT: Short, punchy, action-oriented. Jack needs bullets, not essays. Start with the KEY SIGNAL.\n\nCRITICAL: Do NOT just present raw data. You are an analyst \u2014 extract signal, make recommendations, anticipate what Jack needs to know.",
+      "prompt": "You are Biz Bot \u2014 Jack Loh's autonomous monetization research agent.\n\nYOUR TASK: Run the weekly competitive market intelligence scan and deliver a concise briefing.\n\nINSTRUCTIONS:\n1. Load the biz-research-autonomous skill for full research tools\n2. Run the market research script: `cd /home/ubuntu/.hermes/profiles/bot4/skills/business/biz-research-autonomous/scripts && python3 market-research.py --weekly`\n3. Analyze the output \u2014 extract key signals, not noise\n4. Check if ANY competitors have shifted pricing, launched new products, or entered new niches\n5. Cross-reference against Jack's current 2 Gumroad products ($19 SGD each):\n   - AI Business Automation Prompt Pack: https://jackalope86.gumroad.com/l/byrjla\n   - AI for Content Creators Prompt Pack Vol 2: https://jackalope86.gumroad.com/l/xcjutg\n6. Produce a ONE-PAGE briefing with:\n   - KEY SIGNAL: the single most important finding\n   - COMPETITOR MOVES: any pricing changes, new products, or notable shifts\n   - JACK'S OPPORTUNITY: 1 concrete action Jack should take this week\n   - VERDICT: Market direction + recommended pricing/positioning change (if any)\n\nFORMAT: Short, punchy, action-oriented. Jack needs bullets, not essays. Start with the KEY SIGNAL.\n\nCRITICAL: Do NOT just present raw data. You are an analyst \u2014 extract signal, make recommendations, anticipate what Jack needs to know.\n\n[FLEET OUTPUT FORMAT - ALWAYS FOLLOW] Deliver your report as a SHORT, scannable message for mobile: max 5 bullet points, key numbers FIRST, one line per point, no long paragraphs, no repetition. If something needs action, start the bullet with \u26a0\ufe0f (important) or \ud83d\udd34 (urgent).",
       "skills": [
         "biz-research-autonomous",
         "web-research"
@@ -269,19 +269,19 @@
       "schedule_display": "0 7 * * 1",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 6
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-09T11:34:24.889780+08:00",
-      "next_run_at": "2026-07-27T07:00:00+08:00",
-      "last_run_at": "2026-07-20T07:02:55.587224+08:00",
+      "next_run_at": "2026-08-24T07:00:00+08:00",
+      "last_run_at": "2026-08-17T07:01:52.616590+08:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "origin",
+      "last_delivery_error": "live adapter send failed: [99991403] This month's API call quota has been exceeded; live adapter delivery to feishu:oc_410005a54ef0fbbe0d6374aa9bfacb1e failed: [99991403] This month's API call quota has been exceeded; delivery error: Feishu send failed: [99991403] This month's API call quota has been exceeded",
+      "deliver": "feishu",
       "origin": {
         "platform": "telegram",
         "chat_id": "366983738",
@@ -315,19 +315,19 @@
       "schedule_display": "0 10 * * *",
       "repeat": {
         "times": null,
-        "completed": 15
+        "completed": 44
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-11T19:32:41.604938+08:00",
-      "next_run_at": "2026-07-27T10:00:00+08:00",
-      "last_run_at": "2026-07-26T10:00:54.908599+08:00",
+      "next_run_at": "2026-08-24T10:00:00+08:00",
+      "last_run_at": "2026-08-23T10:00:25.992860+08:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "origin",
+      "last_delivery_error": "live adapter send failed: [99991403] This month's API call quota has been exceeded; live adapter delivery to feishu:oc_410005a54ef0fbbe0d6374aa9bfacb1e failed: [99991403] This month's API call quota has been exceeded; delivery error: Feishu send failed: [99991403] This month's API call quota has been exceeded",
+      "deliver": "feishu",
       "origin": {
         "platform": "telegram",
         "chat_id": "366983738",
@@ -342,7 +342,7 @@
     {
       "id": "e22c2cb4ebb9",
       "name": "Run GitHub backup then check repo stats.\n\nStep 1 \u2014",
-      "prompt": "Run GitHub backup then check repo stats.\n\nStep 1 \u2014 Backup:\n```bash\nexport GITHUB_TOKEN=$(grep GITHUB_TOKEN /home/ubuntu/.hermes/profiles/bot4/.env | cut -d= -f2)\ncd /home/ubuntu/.hermes/profiles/bot4/scripts\npython3 github-backup.py\n```\n\nStep 2 \u2014 Check repo stars/forks:\n```bash\nexport GITHUB_TOKEN=$(grep GITHUB_TOKEN /home/ubuntu/.hermes/profiles/bot4/.env | cut -d= -f2)\nfor repo in hermes-bot-backups tiktok-viral-hooks content-creator-prompts solopreneur-ai-toolkit youtube-shorts-generator; do\n  echo \"=== $repo ===\"\n  curl -s -H \"Authorization: token $GITHUB_TOKEN\" https://api.github.com/repos/jackloh84/$repo\n  echo \"\"\ndone\n```\n\nReport: backup result + total stars across all repos. Keep short.",
+      "prompt": "Run GitHub backup then check repo stats.\n\nStep 1 \u2014 Backup:\n```bash\nexport GITHUB_TOKEN=$(grep GITHUB_TOKEN /home/ubuntu/.hermes/profiles/bot4/.env | cut -d= -f2)\ncd /home/ubuntu/.hermes/profiles/bot4/scripts\npython3 github-backup.py\n```\n\nStep 2 \u2014 Check repo stars/forks:\n```bash\nexport GITHUB_TOKEN=$(grep GITHUB_TOKEN /home/ubuntu/.hermes/profiles/bot4/.env | cut -d= -f2)\nfor repo in hermes-bot-backups tiktok-viral-hooks content-creator-prompts solopreneur-ai-toolkit youtube-shorts-generator; do\n  echo \"=== $repo ===\"\n  curl -s -H \"Authorization: token $GITHUB_TOKEN\" https://api.github.com/repos/jackloh84/$repo\n  echo \"\"\ndone\n```\n\nReport: backup result + total stars across all repos. Keep short.\n\n[FLEET OUTPUT FORMAT - ALWAYS FOLLOW] Deliver your report as a SHORT, scannable message for mobile: max 5 bullet points, key numbers FIRST, one line per point, no long paragraphs, no repetition. If something needs action, start the bullet with \u26a0\ufe0f (important) or \ud83d\udd34 (urgent).",
       "skills": [],
       "skill": null,
       "model": "MiniMax-M3",
@@ -361,19 +361,19 @@
       "schedule_display": "0 20 * * 0",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 5
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-13T23:02:07.238441+08:00",
-      "next_run_at": "2026-08-02T20:00:00+08:00",
-      "last_run_at": "2026-07-19T20:01:31.113487+08:00",
+      "next_run_at": "2026-08-30T20:00:00+08:00",
+      "last_run_at": "2026-08-16T20:01:26.471936+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
-      "deliver": "origin",
+      "deliver": "feishu",
       "origin": {
         "platform": "telegram",
         "chat_id": "366983738",
@@ -412,15 +412,15 @@
       "schedule_display": "0 7 * * *",
       "repeat": {
         "times": null,
-        "completed": 13
+        "completed": 41
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-14T00:15:23.878183+08:00",
-      "next_run_at": "2026-07-27T07:00:00+08:00",
-      "last_run_at": "2026-07-26T07:01:39.987813+08:00",
+      "next_run_at": "2026-08-24T07:00:00+08:00",
+      "last_run_at": "2026-08-23T07:01:25.931946+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -436,13 +436,13 @@
     {
       "id": "c762c2f553bd",
       "name": "Kachang Sia Domain Renewal Reminder",
-      "prompt": "REMINDER for Jack Loh: The kachangsia.com domain (registered 2026-07-17 via Cloudflare Registrar, US$10.50/yr) is due to renew in ~2 weeks on 2027-07-17.\n\nACTIONS REQUIRED:\n1. Log into Cloudflare Registrar (Jack's personal card on file)\n2. Confirm kachangsia.com is set to auto-renew OR manually renew\n3. Verify billing details still valid\n4. If you want to switch to a different registrar or multi-year plan, this is the window\n5. After renewal, ADD THIS EXPENSE to /home/ubuntu/projects/kachang-sia/finance/ledger.csv as a new row (do not modify the 2026-07-17 entry)\n6. Update the pre-incorporation-expenses.md file under /home/ubuntu/projects/kachang-sia/finance/\n\nOriginal entry: 2026-07-17 | Cloudflare Registrar | kachangsia.com | US$10.50 | Marketing/Brand asset | Kachang Sia | Pay: Jack's Cloudflare card | Renewal: 2027-07-17\n\nThis reminder is one-shot. After it fires, schedule the next one for 2028-07-03 (~2 weeks before 2028-07-17).",
+      "prompt": "REMINDER for Jack Loh: The kachangsia.com domain (registered 2026-07-17 via Cloudflare Registrar, US$10.50/yr) is due to renew in ~2 weeks on 2027-07-17.\n\nACTIONS REQUIRED:\n1. Log into Cloudflare Registrar (Jack's personal card on file)\n2. Confirm kachangsia.com is set to auto-renew OR manually renew\n3. Verify billing details still valid\n4. If you want to switch to a different registrar or multi-year plan, this is the window\n5. After renewal, ADD THIS EXPENSE to /home/ubuntu/projects/kachang-sia/finance/ledger.csv as a new row (do not modify the 2026-07-17 entry)\n6. Update the pre-incorporation-expenses.md file under /home/ubuntu/projects/kachang-sia/finance/\n\nOriginal entry: 2026-07-17 | Cloudflare Registrar | kachangsia.com | US$10.50 | Marketing/Brand asset | Kachang Sia | Pay: Jack's Cloudflare card | Renewal: 2027-07-17\n\nThis reminder is one-shot. After it fires, schedule the next one for 2028-07-03 (~2 weeks before 2028-07-17).\n\n[FLEET OUTPUT FORMAT - ALWAYS FOLLOW] Deliver your report as a SHORT, scannable message for mobile: max 5 bullet points, key numbers FIRST, one line per point, no long paragraphs, no repetition. If something needs action, start the bullet with \u26a0\ufe0f (important) or \ud83d\udd34 (urgent).",
       "skills": [],
       "skill": null,
-      "model": null,
-      "provider": null,
-      "provider_snapshot": "minimax-cn",
-      "model_snapshot": "MiniMax-M3",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "provider_snapshot": "deepseek",
+      "model_snapshot": "deepseek-v4-flash",
       "base_url": null,
       "script": null,
       "no_agent": false,
@@ -467,70 +467,21 @@
       "last_status": null,
       "last_error": null,
       "last_delivery_error": null,
-      "deliver": "telegram:366983738",
+      "deliver": "feishu",
       "origin": null,
       "enabled_toolsets": null,
       "workdir": null
     },
     {
-      "id": "5b6a5713e48a",
-      "name": "HN Reply Staggered Poster",
-      "prompt": "Post 3 HN reply comments from /home/ubuntu/.hermes/profiles/bot4/state/outreach_drafts_2026-07-25.json to the corresponding HN threads via the browser_navigate tool.\n\nCRITICAL RULES:\n1. Read /home/ubuntu/.hermes/profiles/bot4/state/outreach_drafts_2026-07-25.json\n2. Pick the FIRST 3 drafts that haven't been posted yet (check outreach_log_2026-07-25.json)\n3. For each: navigate to the URL, click reply, paste the draft text, submit\n4. Update outreach_log_2026-07-25.json with the 3 newly posted URLs\n5. Use Jack's existing @jackloh84 HN account\n6. Post organically \u2014 wait 2-3 minutes between posts (HN flags rapid multi-reply)\n7. If HN returns a captcha or rate limit, STOP and report to Jack\n\nNEVER modify the reply text. NEVER post more than 3 per run.\nNEVER post to threads that are [dead].",
-      "skills": [
-        "platform-policy-enforcer",
-        "humanizer"
-      ],
-      "skill": "platform-policy-enforcer",
-      "model": null,
-      "provider": null,
-      "provider_snapshot": "minimax-cn",
-      "model_snapshot": "MiniMax-M3",
-      "base_url": null,
-      "script": null,
-      "no_agent": false,
-      "context_from": null,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 9,13,17 * * *",
-        "display": "0 9,13,17 * * *"
-      },
-      "schedule_display": "0 9,13,17 * * *",
-      "repeat": {
-        "times": null,
-        "completed": 3
-      },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
-      "paused_reason": null,
-      "created_at": "2026-07-25T23:16:21.860839+08:00",
-      "next_run_at": "2026-07-27T09:00:00+08:00",
-      "last_run_at": "2026-07-26T17:02:23.915953+08:00",
-      "last_status": "ok",
-      "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "origin": {
-        "platform": "telegram",
-        "chat_id": "366983738",
-        "chat_name": "Jack Loh",
-        "thread_id": null,
-        "user_id": "366983738"
-      },
-      "enabled_toolsets": null,
-      "workdir": null,
-      "fire_claim": null
-    },
-    {
       "id": "f1f3e880712c",
       "name": "Self-Probe Loop + Minia2a Monitor",
-      "prompt": "Run the self-probe loop to keep minia2a activity high.\n\nSTEPS:\n1. Execute: python3 /home/ubuntu/.hermes/profiles/bot4/scripts/self_probe_loop.py\n2. Read /home/ubuntu/.hermes/profiles/bot4/state/minia2a_trial_stats.json (or curl https://www.minia2a.uk/api/services?agentId=2e83d5d4-6884-4c56-bf2c-9e9f20a0a52e if missing) to count Jack's trials + calls + volume\n3. Report: \"Loop N: X trials, Y calls, $Z.ZZ volume\"\n4. If calls > 0 AND volume > 0, that's a PAID call \u2014 flag to Jack with details\n\nThis is a background ping. Be terse.",
+      "prompt": "Run the self-probe loop to keep minia2a activity high.\n\nSTEPS:\n1. Execute: python3 /home/ubuntu/.hermes/profiles/bot4/scripts/self_probe_loop.py\n2. Read /home/ubuntu/.hermes/profiles/bot4/state/minia2a_trial_stats.json (or curl https://www.minia2a.uk/api/services?agentId=2e83d5d4-6884-4c56-bf2c-9e9f20a0a52e if missing) to count Jack's trials + calls + volume\n3. Report: \"Loop N: X trials, Y calls, $Z.ZZ volume\"\n4. If calls > 0 AND volume > 0, that's a PAID call \u2014 flag to Jack with details\n\nThis is a background ping. Be terse.\n\n[FLEET OUTPUT FORMAT - ALWAYS FOLLOW] Deliver your report as a SHORT, scannable message for mobile: max 5 bullet points, key numbers FIRST, one line per point, no long paragraphs, no repetition. If something needs action, start the bullet with \u26a0\ufe0f (important) or \ud83d\udd34 (urgent).",
       "skills": [],
       "skill": null,
-      "model": null,
-      "provider": null,
-      "provider_snapshot": "minimax-cn",
-      "model_snapshot": "MiniMax-M3",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "provider_snapshot": "deepseek",
+      "model_snapshot": "deepseek-v4-flash",
       "base_url": null,
       "script": null,
       "no_agent": false,
@@ -543,19 +494,19 @@
       "schedule_display": "0 */4 * * *",
       "repeat": {
         "times": null,
-        "completed": 5
+        "completed": 169
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-25T23:16:22.877993+08:00",
-      "next_run_at": "2026-07-27T00:00:00+08:00",
-      "last_run_at": "2026-07-26T20:02:08.136132+08:00",
+      "next_run_at": "2026-08-24T00:00:00+08:00",
+      "last_run_at": "2026-08-23T20:09:23.943254+08:00",
       "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "origin",
+      "last_delivery_error": "live adapter send failed: [99991403] This month's API call quota has been exceeded; live adapter delivery to feishu:oc_410005a54ef0fbbe0d6374aa9bfacb1e failed: [99991403] This month's API call quota has been exceeded; delivery error: Feishu send failed: [99991403] This month's API call quota has been exceeded",
+      "deliver": "feishu",
       "origin": {
         "platform": "telegram",
         "chat_id": "366983738",
@@ -570,16 +521,16 @@
     {
       "id": "5501db7f5a91",
       "name": "daily-earnings-9am-SGT",
-      "prompt": "Run bash /home/ubuntu/.hermes/profiles/bot4/skills/business/daily-earnings-engine/scripts/daily_earnings_report.sh and deliver the EXACT stdout back to Jack via Telegram. This is the daily-earnings-engine job \u2014 9am SGT.",
+      "prompt": "Run bash /home/ubuntu/.hermes/profiles/bot4/skills/business/daily-earnings-engine/scripts/daily_earnings_report.sh and deliver the EXACT stdout back to Jack via Telegram. This is the daily-earnings-engine job \u2014 9am SGT.\n\n[FLEET OUTPUT FORMAT - ALWAYS FOLLOW] Deliver your report as a SHORT, scannable message for mobile: max 5 bullet points, key numbers FIRST, one line per point, no long paragraphs, no repetition. If something needs action, start the bullet with \u26a0\ufe0f (important) or \ud83d\udd34 (urgent).",
       "skills": [
         "daily-earnings-engine",
         "agent-marketplace-deploy"
       ],
       "skill": "daily-earnings-engine",
-      "model": null,
-      "provider": null,
-      "provider_snapshot": "minimax-cn",
-      "model_snapshot": "MiniMax-M3",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "provider_snapshot": "deepseek",
+      "model_snapshot": "deepseek-v4-flash",
       "base_url": null,
       "script": null,
       "no_agent": false,
@@ -592,19 +543,19 @@
       "schedule_display": "0 9 * * *",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 28
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-26T13:47:38.572460+08:00",
-      "next_run_at": "2026-07-27T09:00:00+08:00",
-      "last_run_at": null,
-      "last_status": null,
+      "next_run_at": "2026-08-24T09:00:00+08:00",
+      "last_run_at": "2026-08-23T09:12:53.610759+08:00",
+      "last_status": "ok",
       "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "origin",
+      "last_delivery_error": "live adapter send failed: [99991403] This month's API call quota has been exceeded; live adapter delivery to feishu:oc_410005a54ef0fbbe0d6374aa9bfacb1e failed: [99991403] This month's API call quota has been exceeded; delivery error: Feishu send failed: [99991403] This month's API call quota has been exceeded",
+      "deliver": "feishu",
       "origin": {
         "platform": "telegram",
         "chat_id": "366983738",
@@ -613,7 +564,8 @@
         "user_id": "366983738"
       },
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": null,
+      "fire_claim": null
     },
     {
       "id": "fb46baf3b8b2",
@@ -624,10 +576,10 @@
         "daily-earnings-engine"
       ],
       "skill": "agent-marketplace-deploy",
-      "model": null,
-      "provider": null,
-      "provider_snapshot": "minimax-cn",
-      "model_snapshot": "MiniMax-M3",
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "provider_snapshot": "deepseek",
+      "model_snapshot": "deepseek-v4-flash",
       "base_url": null,
       "script": null,
       "no_agent": false,
@@ -640,15 +592,15 @@
       "schedule_display": "0 */4 * * *",
       "repeat": {
         "times": null,
-        "completed": 2
+        "completed": 166
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-07-26T13:47:39.589059+08:00",
-      "next_run_at": "2026-07-27T00:00:00+08:00",
-      "last_run_at": "2026-07-26T20:01:20.134364+08:00",
+      "next_run_at": "2026-08-24T00:00:00+08:00",
+      "last_run_at": "2026-08-23T20:06:50.847601+08:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -663,7 +615,750 @@
       "enabled_toolsets": null,
       "workdir": null,
       "fire_claim": null
+    },
+    {
+      "id": "a6ce414bf1c1",
+      "name": "Auto-Sweep Hot Wallet \u2192 Main (every 6h)",
+      "prompt": "Auto-sweep hot wallet to Jack's main, every 6 hours.\n\nRun:\n```bash\npython3 /home/ubuntu/.hermes/profiles/bot4/scripts/auto_sweep.py 2>&1\n```\n\nThe script:\n1. Checks `0x57E33b\u20264f813` USDC balance via Base RPC\n2. If balance < $1 \u2192 silent exit (script logs \"[SILENT]\" effectively)\n3. If balance \u2265 $1 AND no new earnings since last sweep \u2192 silent exit\n4. If balance \u2265 $1 AND new earnings \u2192 calls sweep_safely.py to sweep to `0xf52af41e\u2026`\n5. Sends Jack a Telegram alert with the tx hash\n6. Saves state to /home/ubuntu/.hermes/profiles/bot4/state/auto_sweep.json\n\nDELIVERY: this is `deliver: local` \u2014 the script itself sends TG to Jack's DM. Do NOT send_message. Just run the bash command and report the stdout (which is short). If stdout says \"no new earnings since last sweep \u2014 skip\", say [SILENT] in your response. Otherwise report the sweep result.\n\nUse stdout as the response. No additional commentary.",
+      "skills": [],
+      "skill": null,
+      "model": "minimax/MiniMax-M3",
+      "provider": "minimax-cn",
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */6 * * *",
+        "display": "0 */6 * * *"
+      },
+      "schedule_display": "0 */6 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 8
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-08-03T19:05:08.968828+08:00",
+      "paused_reason": null,
+      "created_at": "2026-08-01T20:42:27.348357+08:00",
+      "next_run_at": "2026-08-04T00:00:00+08:00",
+      "last_run_at": "2026-08-03T18:00:37.991939+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "3f9cd6776196",
+      "name": "ugig.net Gig Scanner (daily 10am SGT)",
+      "prompt": "ugig.net daily scanner for Jack Loh.\n\nRun:\n```bash\npython3 /home/ubuntu/.hermes/profiles/bot4/scripts/ugig_scan.py 2>&1\n```\n\nThe script:\n1. Loads creds from /home/ubuntu/.hermes/profiles/bot4/secrets/ugig.json\n2. If no token (email not confirmed) \u2192 sends 1 daily TG alert to Jack with confirm instructions\n3. If token works \u2192 fetches latest gigs, scores them by skill match, alerts Jack on new high-score matches\n\nDELIVERY: this is deliver:local. The script itself sends TG alerts. Do NOT call send_message. Just run the bash command and report stdout. If stdout starts with \"NO TOKEN\" \u2192 say [SILENT] (Jack already got the TG alert). Otherwise report the scan results.\n\nUse stdout as your response. No additional commentary.",
+      "skills": [],
+      "skill": null,
+      "model": "minimax/MiniMax-M3",
+      "provider": "minimax-cn",
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "display": "0 10 * * *"
+      },
+      "schedule_display": "0 10 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 22
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-01T22:26:01.632979+08:00",
+      "next_run_at": "2026-08-24T10:00:00+08:00",
+      "last_run_at": "2026-08-23T10:00:31.673645+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "cbf10037b78f",
+      "name": "ugig Worker Opportunity Monitor (2h)",
+      "prompt": "Scan ugig.net for worker-earning opportunities (NOT buyer-side). Check: (1) notifications \u2014 unread count + key alerts, (2) new gigs matching Python/AI/x402/security stack, (3) any new conversation messages from buyers we've applied to. Focus on EARNING: gigs where others are hiring and we can apply as worker. Skip any invoice/payment-request noise. Silent if no new opportunities.",
+      "skills": [],
+      "skill": null,
+      "model": "deepseek-v4-flash",
+      "provider": "deepseek",
+      "provider_snapshot": "deepseek",
+      "model_snapshot": "deepseek-v4-flash",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 120,
+        "display": "every 120m"
+      },
+      "schedule_display": "every 120m",
+      "repeat": {
+        "times": null,
+        "completed": 247
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-02T18:48:30.407795+08:00",
+      "next_run_at": "2026-08-23T20:39:47.651193+08:00",
+      "last_run_at": "2026-08-23T18:39:47.651193+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "feishu",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "ecc1b50a939a",
+      "name": "limitless-auto-trader",
+      "prompt": "Limitless auto-trader silent watchdog \u2014 prints only real order/claim/error events",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "limitless_runner.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 1,
+        "display": "every 1m"
+      },
+      "schedule_display": "every 1m",
+      "repeat": {
+        "times": null,
+        "completed": 14292
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-02T21:41:07.206152+08:00",
+      "next_run_at": "2026-08-23T20:10:35.005755+08:00",
+      "last_run_at": "2026-08-23T20:09:35.005755+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "feishu",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": [
+        "terminal"
+      ],
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "812e99505753",
+      "name": "Limitless Profit Bank",
+      "prompt": "Limitless profit bank watchdog",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "limitless_profit_bank.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */6 * * *",
+        "display": "0 */6 * * *"
+      },
+      "schedule_display": "0 */6 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 80
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-03T19:05:18.216657+08:00",
+      "next_run_at": "2026-08-24T00:00:00+08:00",
+      "last_run_at": "2026-08-23T18:00:29.271062+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "feishu",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "2d8ea9edc805",
+      "name": "ugig Overnight $200 Watch",
+      "prompt": "ugig overnight watch",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "ugig_overnight_watch.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/30 * * * *",
+        "display": "*/30 * * * *"
+      },
+      "schedule_display": "*/30 * * * *",
+      "repeat": {
+        "times": null,
+        "completed": 955
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-03T22:16:29.515502+08:00",
+      "next_run_at": "2026-08-23T20:30:00+08:00",
+      "last_run_at": "2026-08-23T20:00:31.934344+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": "live adapter send failed: [99991403] This month's API call quota has been exceeded; live adapter delivery to feishu:oc_410005a54ef0fbbe0d6374aa9bfacb1e failed: [99991403] This month's API call quota has been exceeded; delivery error: Feishu send failed: [99991403] This month's API call quota has been exceeded",
+      "deliver": "feishu",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "3d5311073c12",
+      "name": "sales@ Daily Email Digest",
+      "prompt": "Read the sales@kachangsia.com mailbox and produce a SHORT digest for Jack Loh.\n\nSTEPS:\n1. Run: HOME=/home/ubuntu mail-peek sales@kachangsia.com 36  (this lists up to 36 messages, newest last)\n2. If there are NEW messages since the last digest (check ~/.hermes/profiles/bot4/state/sales_digest_last_id.txt \u2014 save the newest message ID or date you reported), summarize them.\n3. Output format (keep under 12 lines total):\n   - Header: \ud83d\udcec sales@ digest \u2014 N new since <date>\n   - A compact list: sender | subject | 1-line note on what's actionable\n   - Flag anything needing Jack's action (ugig applications, buyer messages, payments)\n4. Do NOT include old already-reported emails. Do NOT add follow-on tasks. End with the newest reported date saved to the state file.\n\nIf no new mail: reply with a single line \"\ud83d\udcec sales@ \u2014 no new mail since <date>.\" and update nothing.\n\n[FLEET OUTPUT FORMAT - ALWAYS FOLLOW] Deliver your report as a SHORT, scannable message for mobile: max 5 bullet points, key numbers FIRST, one line per point, no long paragraphs, no repetition. If something needs action, start the bullet with \u26a0\ufe0f (important) or \ud83d\udd34 (urgent).",
+      "skills": [],
+      "skill": null,
+      "model": "MiniMax-M3",
+      "provider": "minimax-cn",
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "display": "0 9 * * *"
+      },
+      "schedule_display": "0 9 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 19
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-04T15:28:26.762987+08:00",
+      "next_run_at": "2026-08-24T09:00:00+08:00",
+      "last_run_at": "2026-08-23T09:00:49.511472+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": "live adapter send failed: [99991403] This month's API call quota has been exceeded; live adapter delivery to feishu:oc_410005a54ef0fbbe0d6374aa9bfacb1e failed: [99991403] This month's API call quota has been exceeded; delivery error: Feishu send failed: [99991403] This month's API call quota has been exceeded",
+      "deliver": "feishu",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file"
+      ],
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "297891e22a9e",
+      "name": "GitHub Repo Watcher (runx + memanto)",
+      "prompt": "GitHub repo watcher \u2014 silent watchdog, script prints only NEW issues",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "gh_watch.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9,15,21 * * *",
+        "display": "0 9,15,21 * * *"
+      },
+      "schedule_display": "0 9,15,21 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 57
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-04T18:15:46.602744+08:00",
+      "next_run_at": "2026-08-23T21:00:00+08:00",
+      "last_run_at": "2026-08-23T15:00:28.215310+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "feishu",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "b01f3d012d5f",
+      "name": "Merchant Center Approval Watch",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "mc_approval_watch.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 11 * * *",
+        "display": "0 11 * * *"
+      },
+      "schedule_display": "0 11 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 17
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-08-21T19:06:55.269277+08:00",
+      "paused_reason": null,
+      "created_at": "2026-08-04T22:23:28.569125+08:00",
+      "next_run_at": "2026-08-22T11:00:00+08:00",
+      "last_run_at": "2026-08-21T11:00:46.803736+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "feishu",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "de89ba01b5aa",
+      "name": "Trading Daily Report \u2192 Feishu",
+      "prompt": "Trading daily report",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "trading_daily_report.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 23 * * *",
+        "display": "30 23 * * *"
+      },
+      "schedule_display": "30 23 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 14
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-08T23:36:53.050968+08:00",
+      "next_run_at": "2026-08-23T23:30:00+08:00",
+      "last_run_at": "2026-08-22T23:30:38.776804+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": "live adapter send failed: [99991403] This month's API call quota has been exceeded; live adapter delivery to feishu:oc_410005a54ef0fbbe0d6374aa9bfacb1e failed: [99991403] This month's API call quota has been exceeded; delivery error: Feishu send failed: [99991403] This month's API call quota has been exceeded",
+      "deliver": "feishu",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "692ad0727a17",
+      "name": "Trading Weekly Report \u2192 Feishu",
+      "prompt": "Trading weekly report",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "trading_weekly_report.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 23 * * 0",
+        "display": "30 23 * * 0"
+      },
+      "schedule_display": "30 23 * * 0",
+      "repeat": {
+        "times": null,
+        "completed": 2
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-08T23:37:01.904346+08:00",
+      "next_run_at": "2026-08-23T23:30:00+08:00",
+      "last_run_at": "2026-08-16T23:30:41.421789+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "feishu",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "ddf52b1a1d62",
+      "name": "Trading Command Center \u2192 Feishu (8am)",
+      "prompt": "Trading command center report",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "trading_master_doc.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "display": "0 8 * * *"
+      },
+      "schedule_display": "0 8 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 15
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-08T23:43:40.554703+08:00",
+      "next_run_at": "2026-08-24T08:00:00+08:00",
+      "last_run_at": "2026-08-23T08:00:25.979405+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": "live adapter send failed: [99991403] This month's API call quota has been exceeded; live adapter delivery to feishu:oc_410005a54ef0fbbe0d6374aa9bfacb1e failed: [99991403] This month's API call quota has been exceeded; delivery error: Feishu send failed: [99991403] This month's API call quota has been exceeded",
+      "deliver": "feishu",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "ddb00bfafcd8",
+      "name": "Feishu Trading Sheet Auto-Update (10m)",
+      "prompt": "Feishu trading sheet auto-update",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "feishu_trading_sheet.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/10 * * * *",
+        "display": "*/10 * * * *"
+      },
+      "schedule_display": "*/10 * * * *",
+      "repeat": {
+        "times": null,
+        "completed": 2137
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-08T23:51:52.853840+08:00",
+      "next_run_at": "2026-08-23T20:10:00+08:00",
+      "last_run_at": "2026-08-23T20:00:30.900495+08:00",
+      "last_status": "error",
+      "last_error": "Script exited with code 1\nstderr:\nTraceback (most recent call last):\n  File \"/home/ubuntu/.hermes/profiles/bot4/scripts/feishu_trading_sheet.py\", line 278, in <module>\n    main()\n  File \"/home/ubuntu/.hermes/profiles/bot4/scripts/feishu_trading_sheet.py\", line 176, in main\n    sheets = list_sheets(tok, st)\n             ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.hermes/profiles/bot4/scripts/feishu_trading_sheet.py\", line 70, in list_sheets\n    r = api(tok, \"GET\", f\"/open-apis/sheets/v3/spreadsheets/{st}/sheets/query\")\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.hermes/profiles/bot4/scripts/feishu_trading_sheet.py\", line 65, in api\n    r = json.loads(urllib.request.urlopen(req, timeout=25).read())\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/urllib/request.py\", line 216, in urlopen\n    return opener.open(url, data, timeout)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/urllib/request.py\", line 525, in open\n    response = meth(req, response)\n               ^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/urllib/request.py\", line 634, in http_response\n    response = self.parent.error(\n               ^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/urllib/request.py\", line 563, in error\n    return self._call_chain(*args)\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/urllib/request.py\", line 496, in _call_chain\n    result = func(*args)\n             ^^^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/urllib/request.py\", line 643, in http_error_default\n    raise HTTPError(req.full_url, code, msg, hdrs, fp)\nurllib.error.HTTPError: HTTP Error 429: Too Many Requests",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "a52f9a38dc39",
+      "name": "Hyperliquid Trader Watch (every 1m)",
+      "prompt": "Hyperliquid perp trader watchdog \u2014 silent unless a real event happens.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "hl_trader.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 1,
+        "display": "every 1m"
+      },
+      "schedule_display": "every 1m",
+      "repeat": {
+        "times": null,
+        "completed": 6782
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": "2026-08-18T21:44:51.115397+08:00",
+      "paused_reason": null,
+      "created_at": "2026-08-09T11:39:04.228469+08:00",
+      "next_run_at": "2026-08-18T21:45:23.012127+08:00",
+      "last_run_at": "2026-08-18T21:44:23.012127+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "feishu",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "919fec58482e",
+      "name": "Daily ugig Earning Engine (bids + DMs)",
+      "prompt": "Run the daily ugig earning engine: place up to 5 bids on the highest-value skill-matched gigs, then DM up to 10 buyers of $50+ gigs directly. Report: number of bids placed, DMs sent, total value targeted.",
+      "skills": [
+        "ugig-net-marketplace"
+      ],
+      "skill": "ugig-net-marketplace",
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "deepseek",
+      "model_snapshot": "deepseek-v4-pro",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "display": "0 8 * * *"
+      },
+      "schedule_display": "0 8 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 11
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-12T17:33:54.633098+08:00",
+      "next_run_at": "2026-08-24T08:00:00+08:00",
+      "last_run_at": "2026-08-23T08:08:06.250361+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "12ebb6367911",
+      "name": "Morpho position weekly check",
+      "prompt": "",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "morpho_balance.py",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "display": "0 9 * * 1"
+      },
+      "schedule_display": "0 9 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-19T14:19:38.981591+08:00",
+      "next_run_at": "2026-08-24T09:00:00+08:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "366983738",
+        "chat_name": "Jack Loh",
+        "thread_id": null,
+        "user_id": "366983738"
+      },
+      "enabled_toolsets": null,
+      "workdir": null
     }
   ],
-  "updated_at": "2026-07-26T20:02:08.136612+08:00"
+  "updated_at": "2026-08-23T20:09:35.005889+08:00"
 }
