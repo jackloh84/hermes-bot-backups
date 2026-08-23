@@ -1,8 +1,10 @@
 {
-  "fetched_at": "2026-08-08T04:03:00Z",
-  "service_count": 22,
+  "service_count": 1,
+  "service_id": "f52af41e-ccea6b2bb983",
   "trials": 2,
   "calls": 0,
   "volume": 0.0,
-  "paid_endpoints": []
+  "price_cents": 1,
+  "fetched_at": "2026-08-23T08:03:00+00:00",
+  "source": "live agentId-filtered API pull (cron self-probe run)"
 }
