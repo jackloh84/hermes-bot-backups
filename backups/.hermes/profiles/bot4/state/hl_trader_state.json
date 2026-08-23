@@ -1,12 +1,18 @@
 {
-  "day": "2026-08-09",
+  "day": "2026-08-18",
   "trades": 0,
   "wins": 0,
   "losses": 0,
   "realized": 0.0,
   "bankroll": 19.974908,
-  "stopped": true,
-  "open": null,
+  "stopped": false,
+  "open": {
+    "pair": "ETH",
+    "direction": "short",
+    "tp": 1858.8889285714286,
+    "sl": 1887.4407142857142,
+    "dry": true
+  },
   "last_ping": 0.0,
   "trade_log": []
 }
