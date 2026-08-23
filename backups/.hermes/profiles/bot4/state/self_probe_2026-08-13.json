@@ -1,0 +1,79 @@
+{
+  "ts": "2026-08-13",
+  "url": "https://api.kachangsia.com/api",
+  "probes": [
+    {
+      "probe": {
+        "action": "wallet-scan",
+        "address": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045"
+      },
+      "ok": true,
+      "tag": "gate",
+      "resp_size": 672
+    },
+    {
+      "probe": {
+        "action": "swap-quote"
+      },
+      "ok": true,
+      "tag": "gate",
+      "resp_size": 671
+    },
+    {
+      "probe": {
+        "action": "polymarket-odds",
+        "slug": "will-bitcoin-hit-100k-by-2027"
+      },
+      "ok": true,
+      "tag": "gate",
+      "resp_size": 676
+    },
+    {
+      "probe": {
+        "action": "polymarket-list"
+      },
+      "ok": true,
+      "tag": "gate",
+      "resp_size": 676
+    },
+    {
+      "probe": {
+        "action": "address-validate",
+        "address": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045"
+      },
+      "ok": true,
+      "tag": "gate",
+      "resp_size": 677
+    },
+    {
+      "probe": {
+        "action": "token-info",
+        "contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+      },
+      "ok": true,
+      "tag": "gate",
+      "resp_size": 671
+    },
+    {
+      "probe": {
+        "action": "contract-risk",
+        "contract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+      },
+      "ok": true,
+      "tag": "gate",
+      "resp_size": 674
+    },
+    {
+      "probe": {
+        "action": "echo",
+        "msg": "minia2a-self-probe"
+      },
+      "ok": true,
+      "tag": "ok",
+      "resp_size": 129
+    }
+  ],
+  "ok_count": 1,
+  "gate_count": 7,
+  "total": 8
+}
